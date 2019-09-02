@@ -1,7 +1,8 @@
 
 ## AWiB Workshop
-Our task is to create an chatbot that allows the user to tell his updated company information by anwsering questions the bot asks. After that we send the infromation from the bot to our RPA.  
+Our task is to create an chatbot that allows the user to tell his updated company information by anwsering questions the bot asks. After that we send the infromation from the bot to our RPA (Robotic Process Automation).  
 Our RPA then fetches correct information of the company from YTJ.fi and show the user if the information is valid from the bot.
+
 #### Content
 - [Assistant](#assistant)
 - [Connecting Chatbot to BAW](#connecting-chatbot-to-baw)
@@ -19,6 +20,7 @@ In this part we create the **Chatbot** and edit it so that it sends the required
 ## Connecting Chatbot to BAW
  This connects the backends of the chatbot and RPA so that they can communicate together. With this we are able to send the inputs from the chatbot to RPA.  
  ``Sandra?``  
+  ``BAW?? Write what it means at least the first time it is mentioned``  
  
 ## Automation
 [Environment](https://bluedemos.com/show/2399)(?)  
