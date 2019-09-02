@@ -15,11 +15,10 @@ Our RPA then fetches correct information of the company from YTJ.fi and show the
 ## Assistant
 In this part we create the **Chatbot** and edit it so that it sends the required information to the middleware(?)
  - [LAB 1: Cognitive Chatbot Basics](./1-Basics)
- - [LAB 2: Understanding Sentiment - Integrating Watson Natural Language Understanding](./2-Sentiment)
+ - [LAB 2: Integrating RPA with Watson Assistant](./2-Sentiment)
 
 ## Connecting Chatbot to BAW
- This connects the backends of the chatbot and RPA so that they can communicate together. With this we are able to send the inputs from the chatbot to RPA.  
- ``Sandra?``  
+ This connects the backends of the chatbot and RPA so that they can communicate together. With this we are able to send the inputs from the chatbot to RPA.   
   ``BAW?? Write what it means at least the first time it is mentioned``  
  
 ## Automation
