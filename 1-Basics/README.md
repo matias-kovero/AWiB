@@ -7,10 +7,8 @@ In this lab we'll start to build a chatbot using _**Watson Assistant**_. This ba
 ## Agenda
 - Introduction to [Watson Assistant](https://www.ibm.com/cloud/watson-assistant/)
 - Setup the **_Watson Assistant_** service
-- Understanding user intent: create **_intents_** and _**entities**_
-- Building chatbot responses: create a _**dialog tree**_
+- Import basic Watson Assistant skill
 - Test your chatbot
-- Adding rich content: sending images
 
 ## Introduction to Watson Assistant
 IBM **_Watson Assistant_** allows you to create cognitive chatbots that you can customise for your business, and deploy them across multiple channels to bring help to your customers where and when they need it.
