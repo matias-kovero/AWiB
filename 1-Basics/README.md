@@ -1,5 +1,5 @@
 # _**Watson Assistant Lab 1**_: Cognitive Chatbot Basics
-In this lab we'll start to build a chatbot using _**Watson Assistant**_. This basic chatbot will recommend a new mobile phone for a user based on their feedback about previous experiences with phones.
+In this lab we'll start to build a chatbot using _**Watson Assistant**_. This basic chatbot is a banking bot that will help the user with things like making a credit card payment or choosing a credit card. 
 
 ## Requirements
 - [IBM Cloud account](https://cloud.ibm.com/)
@@ -28,7 +28,7 @@ In this section we are going to create a **_Watson Assistant_** instance on IBM 
 
 ![](./images/01-assistant-service.jpg)  
 
-**(2)** Create the service with a unique name: we'd suggest something like `Watson Assistant-eventname-yourinitials`, e.g. `Watson Assistant-DSA-GRW`
+**(2)** Create the service with a unique name: we'd suggest something like `Watson Assistant-eventname-yourinitials`.
 
 Scroll down and ensure you are using the `Lite` plan, then hit `Create`.
 
@@ -41,13 +41,14 @@ Scroll down and ensure you are using the `Lite` plan, then hit `Create`.
 ## Understanding user intent: create _**intents**_ and _**entities**_
 **(1)** The first thing we need to do in **_Watson Assistant_** is create a _**Skill**_. A _**skill**_ contains the training data and machine learning logic that enables your chatbot to understand and help users and customers.
 
-Click on `Skills` in the menu bar, then `Create Skill`. Enter the name `Phone Advisor` for your skill, and hit `Create dialog skill`:
+Due to time contrains in this session we will import an existing skill. Download the skill from this link: https://ibm.box.com/v/bank-skill-wa
+Click on `Skills` in the menu bar, then go to `Import Skill`. Find the downloaded .json file in your computer and 
 
 ![](./images/05-create-skill-new.jpg)
 
-![](./images/06-add-dialog-skill.jpg)
+![](./images/06-import-dialog-skill.jpg)
 
-Now we'll go on to create the constructs required for our chatbot: _**Intents**_, _**Entities**_ and _**Dialogs**_.
+You will be directed to the chatbot content. 
 
 **(2)** Create the chatbot _**Intents**_.
 
