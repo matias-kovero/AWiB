@@ -50,9 +50,6 @@ There's an `Import Skill` option available whenever you create a new skill - it 
 
 ![](./images/05-create-skill-new.jpg)
 
-![](./images/34-import-skill.jpg)
-
-
 ![](./images/06-import-dialog-skill.jpg)
 
 You will be directed to the chatbot content. 
@@ -71,21 +68,18 @@ _**Watson Assistant**_ can also recommend _**synonyms**_ for your _**entity**_ v
 
 You can also use _**pattern matching**_ when creating _entity_ values. This is really helpful if you want to pick up _entities_ that have specific formats, e.g. phone numbers or website addresses.
 
-![](./images/synonims-patterns.jpg)
 
 A _**dialog**_ uses the _intents_ and _entities_ that are identified in the user's input, plus _context_ from the application that uses _**Watson Assistant**_, to interact with the user and ultimately provide a useful response. Our _dialog_ tree should help the user choose a new mobile phone based on an existing preference or a characteristic important to the user.
 
-![](./images/dialog.jpg)
 
 ## Test your chatbot
 **(1)** You can test your _dialog_ inside the _**Watson Assistant**_ application. Select the `Try It` button at the top right of the screen to enter the _dialog_ tester:
 
-![](./images/35-try-it.jpg)
+![](./images/try-it.jpg)
 
 **(2)** Try and test all of your _dialog_ branches. It'll look something like this:
 
-![](./images/36-test-dialog1.jpg)
-![](./images/37-test-dialog2.jpg)
+![](./images/test-dialog.jpg)
 
 See how _**Watson Assistant**_ is picking out the _intents_ and _entities_ it sees in the user input, and responds accordingly.
 
