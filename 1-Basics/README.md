@@ -82,7 +82,7 @@ A _**dialog**_ uses the _intents_ and _entities_ that are identified in the user
 
 See how _**Watson Assistant**_ is picking out the _intents_ and _entities_ it sees in the user input, and responds accordingly.
 
-# Build a web based chat interface - OPTIONAL
+## Build a web based chat interface - OPTIONAL
 
 Build a web-hosted chat widget that will allow you to test the _**Watson Assistant**_ _skill_ you've just created in a web environment.
 
@@ -119,12 +119,9 @@ The first _integration_ we'll create for our chatbot is a _**Preview Link**_. Ac
 
 **(3)** You'll then be taken to a web page where your chatbot is hosted within a widget:
 
-![](./images/08-select-preview-init.jpg)
-
-**(4)** That's it! You have a shareable web-based chatbot you can use to externally test your _skill_. Try some of the _dialog_ you've already created - you'll see that the widget handles both the text and image responses automatically.
-
 ![](./images/09-preview-test1.jpg)
 
+That's it! You have a shareable web-based chatbot you can use to externally test your _skill_. 
 
 ## Summary
 Well done! You've created your first basic chatbot that understands user _intent_, can pick out _entities_, and responds differently depending on user input. 
