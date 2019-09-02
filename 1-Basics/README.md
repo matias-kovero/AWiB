@@ -83,12 +83,9 @@ A _**dialog**_ uses the _intents_ and _entities_ that are identified in the user
 
 See how _**Watson Assistant**_ is picking out the _intents_ and _entities_ it sees in the user input, and responds accordingly.
 
-## UI
+## UI - OPTIONAL
 
 
 ## Summary
-Well done! You've created your first basic chatbot that understands user _intent_, can pick out _entities_, and responds differently depending on user input. The next lab will show you how to actually get your chatbot in front of your users, using multiple _**integration**_ points.
+Well done! You've created your first basic chatbot that understands user _intent_, can pick out _entities_, and responds differently depending on user input. 
 
-
-
-Now go to [Lab 2: Chatbot Integrations](../2-Integrations) to get your chatbot working in a live environment.
