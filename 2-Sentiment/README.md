@@ -1,4 +1,4 @@
-# _**Watson Assistant Lab 2**_: Integrations - Integrating RPA with Watson Assistant
+# _**Watson Assistant Lab 2**_: Integrating RPA with Watson Assistant
 In this lab we're going to show how you can extend your chatbot by using RPA capabilities using _**IBM Cloud Functions**_.
 
 In practical terms, we'll build another _**Watson Assistant**_ _intent_, that allows the user to submit a new address information. When we pick up this _intent_, we'll ask the user for the new address, feed the input text through the RPA and return a response based on the success of the address change. 
