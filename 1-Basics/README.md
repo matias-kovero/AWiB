@@ -9,6 +9,7 @@ In this lab we'll start to build a chatbot using _**Watson Assistant**_. This ba
 - Setup the **_Watson Assistant_** service
 - Import basic Watson Assistant skill
 - Test your chatbot
+- Build a web based chat interface for your chatbot (Optional)
 
 ## Introduction to Watson Assistant
 IBM **_Watson Assistant_** allows you to create cognitive chatbots that you can customise for your business, and deploy them across multiple channels to bring help to your customers where and when they need it.
@@ -81,7 +82,48 @@ A _**dialog**_ uses the _intents_ and _entities_ that are identified in the user
 
 See how _**Watson Assistant**_ is picking out the _intents_ and _entities_ it sees in the user input, and responds accordingly.
 
-## UI - OPTIONAL
+# Build a web based chat interface - OPTIONAL
+
+Build a web-hosted chat widget that will allow you to test the _**Watson Assistant**_ _skill_ you've just created in a web environment.
+
+An _**assistant**_ is the user-facing component of _**Watson Assistant**_ that manages the flow of information between your _skills_ and your users. _Assistants_ also allow you to create _**integrations**_ that publish your chatbot to the channels your customers will typically go to for help, e.g. _Slack_, _Facebook Messenger_, _Wordpress_.
+
+**(1)** Select `Assistants` from the menu bar and `Create new`.
+
+![](./images/01-create-assistant.jpg)
+
+**(2)** Add a **Name** and **Description** for your _Assistant_, and select `Create`.
+
+![](./images/02-add-assistant.jpg)
+
+**(3)** From here Select `Add Dialog Skill` and select your `Banking Chatbot` skill.
+
+![](./images/03-add-dialog-skill.jpg)
+
+![](./images/04-add-existing-skill.jpg)
+
+**(4)** Your _Assistant_ should now look like this:
+
+![](./images/05-skill-added.jpg)
+
+## Create a _**Preview Link**_: a web widget to test your chatbot
+The first _integration_ we'll create for our chatbot is a _**Preview Link**_. Actually, when you create an _assistant_, a test web site is provisioned for you _automatically_. It has a simple chat widget interface that you can use to interact with your chatbot for testing purposes. You can also share the URL to this IBM-branded site with your team members.
+
+**(1)** Select the `Preview Link` that has already been created from `Integrations`:
+
+![](./images/06-select-preview-link.jpg)
+
+**(2)** You can change the **Name** and **Description** of the _Preview Link_ if you like. For now though, just click the URL under **Try it out and share the link**.
+
+![](./images/07-select-preview-url.jpg)
+
+**(3)** You'll then be taken to a web page where your chatbot is hosted within a widget:
+
+![](./images/08-select-preview-init.jpg)
+
+**(4)** That's it! You have a shareable web-based chatbot you can use to externally test your _skill_. Try some of the _dialog_ you've already created - you'll see that the widget handles both the text and image responses automatically.
+
+![](./images/09-preview-test1.jpg)
 
 
 ## Summary
