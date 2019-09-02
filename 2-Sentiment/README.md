@@ -1,64 +1,20 @@
-# _**Watson Assistant Lab 4**_: Understanding User Sentiment - Integrating Watson Natural Language Understanding
-In this lab we're going to show how you can extend your chatbot by using additional AI capabilities. We'll use the _**Watson Natural Language Understanding (NLU)**_ service to quantify _**sentiment**_ of user responses, and integrate this with _**Watson Assistant**_ using _**IBM Cloud Functions**_.
+# _**Watson Assistant Lab 2**_: Integrations - Integrating RPA with Watson Assistant
+In this lab we're going to show how you can extend your chatbot by using RPA capabilities using _**IBM Cloud Functions**_.
 
-In practical terms, we'll build another _**Watson Assistant**_ _intent_, that allows the user to submit a review of a mobile phone. When we pick up this _intent_, we'll ask the user for a phone brand and the content of their review, feed the review text through _**Watson NLU**_ to check the sentiment, and return a response based on its positivity/negativity.
+In practical terms, we'll build another _**Watson Assistant**_ _intent_, that allows the user to submit a new address information. When we pick up this _intent_, we'll ask the user for the new address, feed the input text through the RPA and return a response based on the success of the address change. 
 
 ## Requirements
-- Successful completion of [Lab 3: Enhancing Your Chatbot with Advanced Watson Assistant Features](../3-Advanced).
+- IBM Cloud account 
+- Previous lab
 
 ## Agenda
-- Introduction to _**Watson NLU**_
-- Setup a _**Watson NLU**_ instance and an _**IBM Cloud Function**_
+- Setup _**IBM Cloud Function**_
 - Setup _**Watson Assistant**_ to use _**IBM Cloud Functions**_
-- Create `Submit Review` _intent_ and _dialog_
+- Create `Submit new address` _intent_ and _dialog_
 
-## Introduction to _**Watson NLU**_
-_**Watson Natural Language Understanding**_ is a collection of APIs that offer text analysis through _natural language processing_. This set of APIs can analyse text to help you understand its _concepts_, _entities_, _keywords_, _sentiment_, and more. You can also create custom models to get specific results that are tailored to your industry/domain.
 
-You can apply _**Watson NLU**_ to various use cases, including content recommendation, advertising optimisation, audience segmentation, data mining, and the one we will use here, voice-of-customer analysis.
-
-**(1)** To get a feel for what _**Watson NLU**_ can do, have a look the demo application [here](https://natural-language-understanding-demo.ng.bluemix.net/).
-
-![](./images/01-watson-nlu-demo.jpg)
-
-**(2)** The demo allows you to perform natural language processing analysis on any text or URL that you supply. If you hit `Analyze` using the text provided, you'll be presented with an analysis of the article, showing:
-
-Analysis       | Description
----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Sentiment      | The general sentiment of your content
-Emotion        | Detects anger, disgust, fear, joy, or sadness that is conveyed in the content
-Keywords       | Returns important keywords in the content
-Entities       | Extracts people, companies, organisations, cities, geographic features, and other information from the content
-Categories     | Classifies content into a hierarchy that's five levels deep
-Concepts       | Returns high-level concepts in the content. For example, a research paper about deep learning might return the concept, "Artificial Intelligence" although the term is not mentioned
-Semantic Roles | Parses sentences into subject, action, and object form
-
-Here are the _**entities**_ extracted from the text:
-
-![](./images/02-demo-entities.jpg)
-
-And here are the _**emotion**_ and _**sentiment**_ scores:
-
-![](./images/03-demo-emotion.jpg)
-
-![](./images/04-demo-sentiment.jpg)
-
-Both of these can be extremely useful to us when building chatbots. For example, if we can analyse a user's responses in real-time so we can understand when they are getting angry, we could automatically route the user to a human operator, or start to use different tones/language.
-
-In our case, we are just going to use the sentiment data to 'grade' the sentiment of a review, and provide a customised response.
-
-## Setup a _**Watson NLU**_ instance and an _**IBM Cloud Function**_
-**(1)**	First create a _**Watson NLU**_ instance in IBM Cloud, if you don't already have one. Once more give it a unique name - something that includes your initials will help you find it later.
-
-![](./images/05-create-nlu-service.jpg)
-
-![](./images/06-create-nlu-service2.jpg)
-
-**(2)** Once your service is created, click `Manage`. We'll need the `API key` and the `URL` from this page to access the service later, so copy them both from here and paste them to a temporary file or note. You can copy the `API Key` by clicking the `Copy to clipboard!` icon.
-
-![](./images/13-nlu-credentials.jpg)
-
-**(3)** Next, we need a mechanism by which we can call the NLU service, so we can passing our user's review text to the API and return a sentiment score. We'll do this by creating an _**IBM Cloud Function**_.
+## Setup _**IBM Cloud Function**_
+**(1)** We need a mechanism by which we can call the RPA service, so we can passing our user's input text to the API. We'll do this by creating an _**IBM Cloud Function**_.
 
 With _**IBM Cloud Functions**_ you can write lightweight code that executes application logic in a scalable way. You can then run this code on-demand via requests from applications like our _**Watson Assistant**_ chatbot, or automatically in response to events.
 
@@ -69,15 +25,11 @@ Some examples of how we might use an _**IBM Cloud Function**_ from within _**Wat
 - Interacting with an external web service to get information. For example, you might check on the expected arrival time for a flight from an air traffic service.
 - Sending requests to an external application, such as a restaurant reservation site, to complete a simple transaction on the user's behalf.
 
-As you've already seen, _**Watson Assistant**_ is great at collecting the required information from a user before returning an appropriate response. So for example, a chatbot user might request a weather forecast and complete _slots_ for required information like _location_ and _date_. We could then call an _**IBM Cloud Function**_ that passes the _location_ and _date_ to a weather forecasting service such as [The Weather Company](https://cloud.ibm.com/catalog/services/weather-company-data), and return the forecast data to _**Watson Assistant**_ so it can present it to the user.
 
-![](./images/07-cloud-function-example.jpg)
+Fortunately, most of the web services we might want to take advantage of have published and documented API calls, so building an _**IBM Cloud Function**_ to call them is usually relatively straightforward, involving some small tweaks to sample code.
 
-**(3)** Fortunately, most of the web services we might want to take advantage of have published and documented API calls, so building an _**IBM Cloud Function**_ to call them is usually relatively straightforward, involving some small tweaks to sample code.
 
-IBM Watson service calls are documented [here](https://github.com/watson-developer-cloud) for a number of different programming languages. We're going to use _Javascript_ (as we'll also use it in later labs) - you can take a look at the documentation and templates we've modelled the calls on [here](https://github.com/watson-developer-cloud/node-sdk) if you wish, although we'll supply all of the code you need to complete the lab.
-
-**(4)** Go to _**IBM Cloud Functions**_ by selecting the `burger icon` in the top left-hand corner, then `Functions`.
+**(2)** Go to _**IBM Cloud Functions**_ by selecting the `burger icon` in the top left-hand corner, then `Functions`.
 
 ![](./images/08-find-functions.jpg)
 
@@ -93,7 +45,7 @@ Next, click `Start Creating`, then `Create Action`.
 
 ![](./images/10-create-action.jpg)
 
-**(5)** Call your new action `getSentimentXXX` - where XXX = your initials (so it has a unique name) - then ensure you select a `Runtime` of **Node.js 8**, and hit `Create`.
+**(3)** Call your new action `RPA-XXX` - where XXX = your initials (so it has a unique name) - then ensure you select a `Runtime` of **Node.js 8**, and hit `Create`.
 
 ![](./images/11-create-get-sentiment.jpg)
 
@@ -110,40 +62,12 @@ You'll then be transported to a code editor. Delete all of the default lines of 
   *         score: sentiment score obtained from Watson NLU for payload
   *
   */
-function main({payload: payload}) {
-
-    var NaturalLanguageUnderstandingV1 = require('watson-developer-cloud/natural-language-understanding/v1.js');
-    var nlu = new NaturalLanguageUnderstandingV1({
-      iam_apikey: '<nlu_api_key>',
-      version: '2018-04-05',
-      url: '<nlu_url>'
-    });
-
-    var promise = new Promise(function(resolve,reject) {
-        nlu.analyze(
-          {
-            text: payload,
-            features: {
-              sentiment: {}
-            }
-          },
-          function(err, res) {
-            if (err) {
-              console.log('error:', err);
-              reject(err);
-            } else {
-              var score = res.sentiment.document.score;
-              console.log('sentiment score = ', score);
-              resolve({score: score});
-            }
-          }
-        );
-    });
-
-return promise;
-}
+ 
+ MY CODE 
+ 
+ 
 ```
-**(6)** You only need to make two small changes to this code.
+**(4)** You only need to make two small changes to this code.
 
 - Replace `<nlu_api_key>` with the value of the **API key** you saved earlier from your _**Watson NLU**_ credentials
 - Replace `<nlu_url>` with the value of the **URL** you saved from the same credentials
@@ -154,9 +78,9 @@ Now hit `Save`.
 
 ![](./images/14-get-sentiment-code-complete.jpg)
 
-The code accepts text as input (_payload_), calls the _**Watson NLU**_ service (using the _features_ parameter to specify the need for _sentiment analysis_), and returns the sentiment value (_score_).
+The code accepts text as input (_payload_), calls the _**RPA API**_ and returns the success value.
 
-**(7)** You can test _**IBM Cloud Functions**_ from within the editor. Click `Change Input`, replace the data in the `Change Action Input` window with the data below, and hit `Apply`.
+**(5)** You can test _**IBM Cloud Functions**_ from within the editor. Click `Change Input`, replace the data in the `Change Action Input` window with the data below, and hit `Apply`.
 ```Javascript
 {"payload": "The iPhone XR looks really cool and has a lot of great apps."}
 ```
