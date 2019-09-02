@@ -87,6 +87,32 @@ Select `Endpoints` from the sidebar, tick the `Enable as Web Action` box, then `
 
 Now let's go and use our function in a new _**Watson Assistant**_ _intent_ and _dialog_.
 
+
+## Setup _**Watson Assistant**_ to use _**IBM Cloud Functions**_
+As you've already seen, you need to pass security credentials between services and applications in order to use them. In order to call _**IBM Cloud Functions**_ from within _**Watson Assistant**_ _dialogs_ we need to understand their credentials and encode them correctly.
+
+**(1)** Get your _**IBM Cloud Function**_ **API Key** from the `API Key` option under `Getting Started`. There's a copy icon available to copy the key to the clipboard.
+
+![](./images/17-get-functions-api-key.jpg)
+
+**(2)** In your _**Watson Assistant**_ _skill_, create a new _dialog_ node **above** your `Welcome` node called `Conversation Start`. Under **If assistant recognizes** enter `conversation_start`, and ensure the node does a `Jump to...` your `Welcome` node and evaluates the `Condition`.
+
+![](./images/18-dialog-conversation-start.jpg)
+
+**(3)** The `conversation_start` condition is a special condition that will **always** be triggered at the commencement of a _dialog_. Although in a number of circumstances the `welcome` special condition will perform this function - such as when we use the `Try it` pane within the tool, and from the chat widget in the `Preview Link` integration - it cannot be guaranteed for all integrations.
+
+This might occur for example, because nodes with the `welcome` special condition are skipped in dialog flows that are _started by users_. And deployed assistants typically wait for users to initiate conversations with them, not the other way around.
+
+So it's good practice to use `conversation_start`, and we'll take further advantage of it here by using it to define our _**IBM Cloud Function**_ credentials in a _context variable_.
+
+**(4)**  Open the _context editor_ for the node, add the variable `$private` with the value below, after replacing `<your-ibm-cloud-functions-api-key>` with the key you copied earlier in step **(1)**.
+```Javascript
+{"myCredentials":{"api_key":"<your-ibm-cloud-functions-api-key>"}}
+```
+![](./images/19-add-credentials.jpg)
+
+Now regardless of integration type our chatbot will always start correctly, and it will define the credentials required to call any of our _**IBM Cloud Functions**_.
+
 ## Create `Change Address` _intent_ and _dialog_
 In order to show the _**Watson Assistant**_ service works perfectly in Finnish we will do the integration in Finnish. 
 **(1)** Let's start with building an _intent_ called `#changeaddress` with some examples of text that a user might say to enter this dialog, e.g.
