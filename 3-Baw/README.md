@@ -1,15 +1,22 @@
 ## Welcome to the BAW workshop
-Here we will explore BAW and view a few of its capabilities.
+Here we will explore Business Automation Workflow (BAW) and view a few of its core functions. As BAW offers a wide variety of functions, we will focus only on the main elements used on this workshop. Every component used in this workshop is already done however it is important to understand on a high level what is happening. 
+
 #### Content
 - [Access to BAW](#access-baw)
 - [Finding the workflow](#finding-the-workflow)
 - [Quick guide on workflows](#quick-guide-on-workflows)
 - [Editing workflows](#editing-workflows)  
+
 #### Access BAW
-Open chrome and navigate to **BAW** Login, fill in the ``username`` & ``password``
+Open chrome and navigate to **BAW** Login (Bookmark folder BAW -> Workflow Center - Solutions)  
+Fill in the ``username`` & ``password`` 
 ![](./images/BAW_Login.png)
-#### Finding the workflow
+#### Finding the workflow  
+
 **Select** AWiB Workflow
+After we have logged in, we want to select ``Process Apps``  
+Select the Process created for this workshop -> ``AWiB-workflow``  
+Select from the overview(topmost tab) -> ``Handle data change`` this will open the workflow of our process.
 ![](./images/BAW_Workflow.gif)
 #### Quick guide on workflows
 This workflow has 3 lanes, **RPA**, **Handler** and **System** (these lanes are user defined so you can name them whatever you like)  
@@ -32,8 +39,13 @@ Settings we need to edit on the ``Robot task``:
 - **Implementation** Here you choose the type of the node, and if it is an ``Robot task``you will need to press **Generate bot...** to create an framework where you can later on implement the actions of the bot.  
 - **Data Mapping** If the robot uses additional information we need to provide them to it. Here we map the data to parameters so that the bot is able to use it.
 
-When you open an form node, you will have a new workflow where you define what the form does when you interact with it.
+When you open an ``form node`` and you will have a new workflow where you define what the form does when you interact with it.
+1. Open the ``form node``
+2. From the ``Implementation``tab open the implementation file
+3. Open the ``Diagram``tab and from the top-right corner press the run icon.
+4. You now see what the user form looks like.
 ![](./images/Form_Workflow.gif)  
 We have defined that it will send forward to the next node __true__ or __false__ depending on what the user has pressed.  
 
-Feel free to explore the diffrent nodes and options on this workflow. Remember to to **Generate Bot...** on the ``Robot task`` node (Implementation tab).
+#### Summary
+Well done! You've now explored a few of the basic elements of the Business Automation Workflow. Feel free to explore the diffrent nodes and options on this workflow.
