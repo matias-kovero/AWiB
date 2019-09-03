@@ -90,9 +90,11 @@ Please check you have the values like so:
 
 
 __8.__ We need to select the position of postiosoite  
-![](./images/selecPostiosoite.gif)  
+![](./images/selectPostiosoite.gif)  
 
 Please check you have the values like so:  
+  
+  
 ![](./images/postiosoiteValues.png)  
 
 __9.__ Setup our function that gets dynamically our ``street_address``, ``postcode`` & ``city``  
