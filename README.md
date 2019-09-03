@@ -1,5 +1,6 @@
 
 ## AWiB Workshop
+### Use case
 Corporate customers contact details have changed. To avoid any issues on future deliveries from their key Supplier, customer initiates contact details changes via Suppliers self-service.
 
 Supplier utilizes AI to collect changed information from Corporate customer in a chatbot dialog. After all valid information has been collected (company name, address, phone number, etc...) - chatbot initiates a business workflow that orchestrates the actual information change into Suppliers system.  
