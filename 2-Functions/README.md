@@ -111,9 +111,14 @@ Select `Endpoints` from the sidebar, tick the `Enable as Web Action` box, then `
 ![](./images/17-enable-as-web-action.jpg)
 
 Copy the Web Action URL and save it in a notepad, you will need it later. It should look like this:
+
 https://us-south.functions.cloud.ibm.com/api/v1/web/sandra.calvo%40fi.ibm.com_dev/default/RPAToken.json
 
-**(5)** Now let's create another action. Repeat the previous process. Create new action called: **RPACall** and paste the following code:
+**(5)** Now let's create another action. Click on the Actions menu on the top left side of the screen:
+
+![](./images/17-enable-as-web-action.jpg)
+
+Then repeat the previous process. Create new action called: **RPACall** and paste the following code:
 
 ```Javascript
 /**
@@ -193,12 +198,11 @@ Select `Endpoints` from the sidebar, tick the `Enable as Web Action` box, then `
 ![](./images/17-enable-as-web-action.jpg)
 
 Copy the Web Action URL and save it in a notepad, you will need it later. It should look like this:
+
 https://us-south.functions.cloud.ibm.com/api/v1/web/sandra.calvo%40fi.ibm.com_dev/default/RPACall.json
 
-**(7)** Get _**IBM Cloud Functions**_ credentials.
 
-
-**(8)** We've now successfully created two _**IBM Cloud Function**_ that can accept text as input and talk to the RPA API. The final thing we need to do here is to make this function callable from within _**Watson Assistant**_ (or in fact, any other application).
+**(7)** We've now successfully created two _**IBM Cloud Function**_ that can accept text as input and talk to the RPA API. The final thing we need to do here is to make this function callable from within _**Watson Assistant**_ (or in fact, any other application).
 
 Now let's go and use our functions in _**Watson Assistant**_.
 
@@ -213,6 +217,7 @@ As you've already seen, you need to pass security credentials between services a
 Under the 'set context' there is a variable called `$private` with the value below:
 ```Javascript
 {"myCredentials":{"api_key":"<your-ibm-cloud-functions-api-key>"}}
+
 ```
 
 Replace `<your-ibm-cloud-functions-api-key>` with the key you copied earlier in step **(1)**.
@@ -222,15 +227,11 @@ Replace `<your-ibm-cloud-functions-api-key>` with the key you copied earlier in 
 Now regardless of integration type our chatbot will always start correctly, and it will define the credentials required to call any of our _**IBM Cloud Functions**_.
 
 
+**(3)** Even though the main conversation is in English we created this path in Finnish to prove Watson Assistant language capabilities. 
 
-_**Watson Assistant's**_ _JSON editor_ provides an alternative method for defining responses. It's also the means by which we are able to call _**IBM Cloud Functions**_ from within a _dialog_.
+Find the node called _**Osoitten muutos**_ and as a child node you will see a node called _**Token**_. 
 
-**(5)** In the _JSON editor_, replace the existing code with this:
-```Javascript
-my action call 
-```
-
-The **only** thing you will need to replace here is `<my-RPAToken-endpoint>`. You can get the name of your _**endpoint**_ by going back to your _**IBM Cloud Function**_ in IBM Cloud, clicking `Endpoints` from the sidebar (if you're not already on that screen), then copying everything in the **Web Action URL** _after_ _**.../web/**_.
+The **only** thing you will need to replace here is `<my-RPAToken-endpoint>`. If you didn't save the endpoint in you can get the name of your _**endpoint**_ by going back to your _**IBM Cloud Function**_ in IBM Cloud, clicking `Endpoints` from the sidebar (if you're not already on that screen), then copying everything in the **Web Action URL** _after_ _**.../web/**_.
 
 It should look something like:
 ```Javascript
@@ -241,7 +242,18 @@ name.lastname_dev/default/RPAToken.json
 
 ![](./images/25-json-editor.jpg)
 
-CONTINUE
+**(4)** Find the node called _**Kutsu RPA**_ and modify your enpoint. It should look like:
+
+```Javascript
+name.lastname_dev/default/RPACall.json
+```
+![](./images/24-get-function-api-name.jpg)
+
+![](./images/25-json-editor.jpg)
+
 
 ## Summary
 You've reached the end of this lab! By completing it you've learned how to further enhance your chatbot by calling additional services using _**IBM Cloud Functions**_. 
+Continue with lab 3 to get started with the Robotic Process Automation part. Once you have the RPA running you will be able to call it from your chatbot. 
+
+
