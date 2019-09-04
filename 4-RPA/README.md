@@ -55,7 +55,7 @@ This is the task bot that we will be implementing the actions needed to gather t
 ### Editing the robot
 Open the _YTJ implementation_ on edit mode (right-click --> Edit).
 
-On the left you will see a list of configurable commands that you can use. First, We will need ``Open Browser`` (found under Web Recorder) & ``Object clone``. Feel free to explore other commands as well. IBM RPA with Automation Anywhere offers over 600 different, easily configurable command to build your RPA bots.
+On the left you will see a list of configurable commands that you can use. First, We will need ``Open Browser`` (found under Web Recorder) & ``Object Cloning``. Feel free to explore other commands as well. IBM RPA with Automation Anywhere offers over 600 different, easily configurable command to build your RPA bots.
 
 If you double-click a command it will be added to your bots Action List. If you add something by accident, you can delete a command by right-clicking it and selecting "Delete".
 
@@ -69,7 +69,9 @@ Here we have defined a few variables you will need:
 ``city``, here we will save the info we get from ytj.fi
    
 #### Implementing the bot
-__1.__ To start off, drag and drop ``Open Browser`` command to your Action List, just below the comment line saying: "1. Open browser to https://www.ytj.fi".
+__1.__ To start off, drag and drop ``Open Browser`` command to your Action List, just below the comment line 1. Drop the command __on the__ 1st command line and it will be added below it. You can also click once to select the 1st comment line and when it is selected, __double-click__ the "Open Browser" command from the command list and it will be added under the selected comment line.
+
+![](./images/command1)
 
 __2.__ Next lets add a ``Object cloning`` and select the search box from the ytj.fi website. We will add the business_id value to it.
 
