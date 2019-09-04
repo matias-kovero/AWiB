@@ -77,9 +77,9 @@ When the Open Browser configuration window opens, type in ``https://www.ytj.fi``
 
 <img src="./images/conf_openbrowser.png" width="50%">
 
-You can test and run your bot fpr the first time. It ony has one command - to open YTJ web page in web browser -, but let's run it because we need the YTJ web page opened when we move forward. First, click __Save__ on the editor window and then __Run__ to test your bot.
+You can now test and run your bot for the first time! It has only one command - to open YTJ web page in web browser -, but let's run it because we need the YTJ web page opened when we move forward. First, click __Save__ on the editor window and then __Run__ to test your bot.
 
-
+![](./images/start_stop.jpg)
 
 __2.__ Next lets add a ``Object cloning`` and select the search box from the ytj.fi website. We will add the business_id value to it.
 
