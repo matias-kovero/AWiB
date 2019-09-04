@@ -135,6 +135,13 @@ After you're done the page in your IE browser should look like this:
 
 ![](./images/actionlist2.png)
 
+__NOTE!__ The Object Cloning command records many different attributes for the object that it recognizes. Some times ne need to check which of the object attributes it has recorder and, in order to make our bot dynamic (work with any values with in the object attributes), we need to remove some of the values that the command uses to recognize the object.
+
+- Double click the added Object Cloning command to open its configuration window
+- __Uncheck__ the last two (``HTML InnerText`` and ``HTML Ref``) search criteria by clicking the "binocular" icon besides them so that "binoculars" disappear. We're doing this since these values are specific for a link of a specific business id. We want our object recognition to work what ever business id is present in the link! Your configuration should look like this:
+
+![](./images/uncheck_attributes.png)
+
 __5.__ Now we obviously want our bot to extract the needed company address information from the search result page. This is easily done using the different commands that RPA platform offers, but since the number of rows in the result HTLM table may vary based on the business id (Y-tunnus) that we are using to conduct the search, we need to make our data extraction dynamic and that takes a bit more time.
 
 That's why we have already implemented a "data extraction bot" that you can use to do data extraction for you. It's located under the AWiB folder in the __Helpers__ folder and is called "__Extract Data from YTJ HTML Table.atmx__".
@@ -162,16 +169,14 @@ Your action list for your bot should now look like this:
 
 ![](./images/actionlist_final.png)
 
-__8.__ We need to select the position of postiosoite  
-![](./images/selectPostiosoite.gif)  
+__7.__ Congrats! All done!
 
-Please check you have the values like so:  
-  
-  
-![](./images/postiosoiteValues.png)  
+Please __remember to save you bot__. If you want, you can now test it one more time. Just remember to close the IE browser window first.
 
-__9.__ Setup our function that gets dynamically our ``street_address``, ``postcode`` & ``city``  
-![](./images/setupFunction.gif)
+If you want, you can test your bot with some other business ids as well :) Try for example these:
+- 1475607-9
+- 1927400-1
+- 1539240-6
 
 ##### Help
 I can't select ytj.fi to my ``Object clone``   
