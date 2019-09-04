@@ -10,8 +10,8 @@ Here we will explore Business Automation Workflow (BAW) and view a few of its co
 #### Access BAW
 Use the instructions given by your instructors to access your virtual environment and open it in your browser.
 
-Within the virtual desktop, open Chrome and navigate to **BAW** Login (Bookmark folder BAW -> Workflow Center - Solutions)  
-Fill in the ``username`` (admin) & ``password`` (admin) 
+Within the virtual desktop, open Chrome and navigate to **BAW** Login (Bookmark folder BAW -> Workflow Center - Solutions). Fill in the ``username`` (admin) & ``password`` (admin) 
+
 ![](./images/BAW_Login.png)
 
 #### Finding the workflow  
