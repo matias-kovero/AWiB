@@ -180,20 +180,16 @@ If you want, you can test your bot with some other business ids as well :) Try f
 - 1927400-1
 - 1539240-6
 
-##### Help
+### Help
 I can't select ytj.fi to my ``Object clone``   
 > Please check you have the webpage open on the background. As it will list only pages you have open.  
 
 How to add variables to fields?  
-> Select the field you want the variable and press F2 . 
+> Select the field you want the variable and press Fn+F2. 
 
 Robot isn't doing nothing  
 > Make sure you don't have multiple webpages open, it will only work on one page.  
 
-Web page stays open after task is completed  
-> Remeber to add a close webpage at the end of all code blocks  
-
 I'm stuck, what to do.  
 > Don't hesitate to ask help.   
-
-> Also if you can't get the functions to work. There is an working version. Ask assistance to get it setup.  
+> Also, if you can't get your bot to work, there is an working version. Ask assistance to get it setup.
