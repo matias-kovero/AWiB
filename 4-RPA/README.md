@@ -34,11 +34,11 @@ It might prompt you with a pop-up - if so, select __Skip__ from the bottom-right
 
 
 #### RPA implementation artifacts
-We have already created an skeleton implementatio for you to start. Move to __AWiB__ folder by 
+We have already created a skeleton implementation for you to get started. Move to __AWiB__ folder by clicking the folder from the Task navigation area on the right-hand side under My Tasks. The contents of the AWiB folder will be shown within the editor.
 
 **!!** **If you double-click a file it will run it.**  **!!**  
 You can edit the file by clicking it once and select edit from the top or right-click and select edit.  
-![](./images/Framework_location.png)
+![](./images/rpa_artifacts.png)
 Files in this directory:  
 **Get info from YTJ**   
 This is the main function. When we get an task from BAW, this file will run.  
