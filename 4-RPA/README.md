@@ -17,14 +17,18 @@ What this ``bot`` should do:
 - [Help](#help)
 
 ##### Setup
-**Check** that the RPA is running by opening __Internet Explorer__  and check ``RPA Control room``  
-You should see this page. (No need to login, just check that the page loads).
+**Check** that the RPA is running by opening __Chrome__ web browser and opening ``RPA Control room`` from the bookmarks under RPA-folder. You should see this page (No need to login, just check that the page loads). If not, ask your instructor to help you.
+
 ![](./images/RPA_ControlRoom.png)  
 
 ##### Launch RPA
-![](./images/RPA_Launch.png)   
+
+![](./images/RPA_Launch.png)
+
 After that login  with ``username``& ``password``
+
 ![](./images/RPA_Login.png)   
+
 It might prompt you with a pop-up - if so, select __Skip__ from the bottom-right. 
 
 
