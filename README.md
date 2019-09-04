@@ -8,7 +8,7 @@ Supplier utilizes AI to collect changed information from Corporate customer in a
 Workflow utilizes both automated and manual tasks to finalize the contact details change. Robotic Process Automation (RPA) is used to supplement and validate company details given by customer from ytj.fi service.  
 All contact and validation information collected during the process (company name, address, phone number, Business ID, etc...) are provided to workflow handler in modern UI, where handler can check the information provided by the customer matches the one got from ytj.fi and then decide to accept or decline the new address information.
 
-![](./Images/Screenshot 2019-09-04 at 12.09.32.png)
+![](./Images/overall.png)
 
 #### Content
 - [Assistant](#assistant)
