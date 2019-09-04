@@ -42,12 +42,14 @@ Settings we would normally need to set on the ``Robot task`` **NOTE!**: everythi
 - **Data Mapping** If the robot uses additional information we need to provide them to it. Here we map the data to parameters so that the bot is able to use it.
 
 When you open an ``UI node / Human task activity`` (Validate data), the so called ``coach designer`` opens. Here you can implement your human taks in form of UIs (pages with whatever content) and logical screen flow between them.
-1. Open the ``form node``
-2. From the ``Implementation``tab open the implementation file
-3. Open the ``Diagram``tab and from the top-right corner press the run icon.
+1. Clik the ``UI node`` (Validate data)
+2. From the ``Implementation``tab (at the properties section bottom part of the screen) open the implementation file (Validate data CSHS) by clicking it.
+3. Open the ``Diagram`` tab (if not opened automatically) to observe the screenflow we have built. You test the UI from the top-right corner by pressing the run icon.
 4. You now see what the user form looks like.
+
 ![](./images/Form_Workflow.gif)  
-We have defined that it will send forward to the next node __true__ or __false__ depending on what the user has pressed.  
+
+We have defined that it will send forward to the next node __true__ or __false__ depending on what button (Approve or Decline) the user has pressed.
 
 #### Summary
-Well done! You've now explored a few of the basic elements of the Business Automation Workflow. Feel free to explore the diffrent nodes and options on this workflow.
+Well done! You've now explored a few of the basic elements of the Business Automation Workflow. Feel free to explore the diffrent nodes/activities and options on this workflow. Just do not change anything that has already been configured for your convenience :)
