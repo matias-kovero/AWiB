@@ -11,9 +11,9 @@ What this ``bot`` should do:
 #### Content
 - [Setup](#setup)
 - [Launch RPA](#launch-rpa)
-- [Robot Framework location](#robot-framework-location)
+- [RPA implementation artifacts](#rpa-implementation-aftifacts)
 - [Editing the robot](#editing-the-robot) 
-- [Coding the bot](#coding-the-bot) 
+- [Implementing the bot](#implementing-the-bot) 
 - [Help](#help)
 
 ### Setup
