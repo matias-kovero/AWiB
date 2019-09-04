@@ -140,7 +140,9 @@ __NOTE!__ The Object Cloning command records many different attributes for the o
 - Double click the added Object Cloning command to open its configuration window
 - __Uncheck__ the last two (``HTML InnerText`` and ``HTML Ref``) search criteria by clicking the "binocular" icon besides them so that "binoculars" disappear. We're doing this since these values are specific for a link of a specific business id. We want our object recognition to work what ever business id is present in the link! Your configuration should look like this:
 
-![](./images/uncheck_attributes.png)
+![](./images/uncheck.png)
+
+- __Save__ your Object Cloning configuration and your bot.
 
 __5.__ Now we obviously want our bot to extract the needed company address information from the search result page. This is easily done using the different commands that RPA platform offers, but since the number of rows in the result HTLM table may vary based on the business id (Y-tunnus) that we are using to conduct the search, we need to make our data extraction dynamic and that takes a bit more time.
 
