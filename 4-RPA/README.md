@@ -53,7 +53,7 @@ This is what we call a "system bot". When this is started, it automatically conn
 This is the task bot that we will be implementing the actions needed to gather the date from ytj.fi web site. ``Get info from YTJ`` calls this task bot. In other words, we could have implemented the needed robotic actions directly Get info from YTJ -bot, but this way it is a bit more feasible to work, separating the actual implementation from the generated main bot.
 
 ### Editing the robot
-Open the _YTJ implementation_ on edit mode (right-click --> Edit).
+Open the _YTJ implementation.atmx_ to __editor window__ (right-click --> Edit).
 
 On the left you will see a list of configurable commands that you can use. First, We will need ``Open Browser`` (found under Web Recorder) & ``Object Cloning``. Feel free to explore other commands as well. IBM RPA with Automation Anywhere offers over 600 different, easily configurable command to build your RPA bots.
 
@@ -69,13 +69,17 @@ Here we have defined a few variables you will need:
 ``city``, here we will save the info we get from ytj.fi
    
 #### Implementing the bot
-__1.__ To start off, drag and drop ``Open Browser`` command to your Action List, just below the comment line 1. Drop the command __on the__ 1st command line and it will be added below it. You can also click once to select the 1st comment line and when it is selected, __double-click__ the "Open Browser" command from the command list and it will be added under the selected comment line.
+__1.__ To start off, drag and drop ``Open Browser`` command to your Action List, just below __the first comment line__. Drop the command __on the__ 1st comment line and it will be added below it. You can also click once to select the 1st comment line and when it is selected, __double-click__ the "Open Browser" command from the command list and it will be added under the selected comment line.
 
 ![](./images/command1.png)
 
 When the Open Browser configuration window opens, type in ``https://www.ytj.fi`` to "Step 1: URL to Open" and click __Save__.
 
-<img src="./images/conf_openbrowser.png" width="400">
+<img src="./images/conf_openbrowser.png" width="50%">
+
+You can test and run your bot fpr the first time. It ony has one command - to open YTJ web page in web browser -, but let's run it because we need the YTJ web page opened when we move forward. First, click __Save__ on the editor window and then __Run__ to test your bot.
+
+
 
 __2.__ Next lets add a ``Object cloning`` and select the search box from the ytj.fi website. We will add the business_id value to it.
 
