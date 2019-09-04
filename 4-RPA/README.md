@@ -144,7 +144,7 @@ __5.__ Now we obviously want our bot to extract the needed company address infor
 - When Run Task configuration window open click __Browse__ to select the above mentioned helper task (AWiB --> Helpers --> Extract Data from YTJ HTML Table.atmx).
 - Then click the __Variable__ option selection and press __Quick Map__ button to map variables beetween the task bot we're now implementing and the helper bot. Click __OK__ when the message box is shown. Your Run Task configuration window should look like this:
 
-![](./images/conf_runtask.png)
+<img src="./images/conf_runtask.png" width="50%">
 
 
 
