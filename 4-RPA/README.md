@@ -2,11 +2,11 @@
 If the other sections where mainly reading and viewing already done elements, now you will get to create your own working bot with _Robotic Process Automation_ platform (IBM RPA with Automation Anywhere).  
 
 What this ``bot`` should do:
-1. Waits info from our _Cloud Functions_
-2. Gets the business_id(y-tunnus) typed on our chatbot.
-3. Navigates to _ytj.fi_ and creates a search with the given business_id.
-4. Gathers the information from the search result.
-5. Labels the information and sends it forward to the next task. (User validation)
+1. Waits for a task assigment from the workflow (Handle data change) that is triggered from our _Cloud Functions_ within our Watson Assistant chatbot.
+2. Receives the business_id (y-tunnus) from the workflow.
+3. Navigates to _ytj.fi_ web site and creates a search with the given business_id.
+4. Gathers the address information from the search result.
+5. Sends the gathered information back to our workflow that automatically forwards it to the next task in the workflow (User validation).
 
 #### Content
 - [Setup](#setup)
