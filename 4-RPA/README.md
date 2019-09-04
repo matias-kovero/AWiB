@@ -77,9 +77,11 @@ When the Open Browser configuration window opens, type in ``https://www.ytj.fi``
 
 <img src="./images/conf_openbrowser.png" width="50%">
 
-You can now test and run your bot for the first time! It has only one command - to open YTJ web page in web browser -, but let's run it because we need the YTJ web page opened when we move forward. First, click __Save__ on the editor window and then __Run__ to test your bot.
+You can now test and run your bot for the first time! It has only one command - to open YTJ web page in web browser -, but let's run it because we need the YTJ web page opened when we move forward. First, click __Save__ on the editor window and then __Run__ to test your bot. __NOTE!__ When you click "Run", the RPA platform will take over your controls (mouse and keyboard). Make sure not to touch anything when the bot is running or you might interfere its operation.
 
 ![](./images/start_stop.JPG)
+
+Your bot should run and YTJ web page should be opened in Internet Explorer (IE). Bot stops automatically. If you see a pop-up in IE about some security preferences, click "Ask me later" to close the pop-up. Nice! Your first RPA run :) __Make sure to leave the YTJ web site open!!__
 
 __2.__ Next lets add a ``Object cloning`` and select the search box from the ytj.fi website. We will add the business_id value to it.
 
