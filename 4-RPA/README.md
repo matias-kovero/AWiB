@@ -16,12 +16,12 @@ What this ``bot`` should do:
 - [Coding the bot](#coding-the-bot) 
 - [Help](#help)
 
-#### Setup
+### Setup
 **Check** that the RPA is running by opening __Chrome__ web browser and opening ``RPA Control room`` from the bookmarks under RPA-folder. You should see this page (No need to login, just check that the page loads). If not, ask your instructor to help you.
 
 ![](./images/RPA_ControlRoom.png)  
 
-#### Launch RPA
+### Launch RPA
 Open the __TOOLS__ folder from your desktop and double click __AA Enterprice Client 11.3__ to open our RPA editor.
 
 ![](./images/RPA_Launch.png)
@@ -52,7 +52,7 @@ This is what we call a "system bot". When this is started, it automatically conn
 **YTJ implementation** . 
 This is the task bot that we will be implementing the actions needed to gather the date from ytj.fi web site. ``Get info from YTJ`` calls this task bot. In other words, we could have implemented the needed robotic actions directly Get info from YTJ -bot, but this way it is a bit more feasible to work, separating the actual implementation from the generated main bot.
 
-#### Editing the robot
+### Editing the robot
 Open the _YTJ implementation_ on edit mode (right-click --> Edit).
 
 On the left you will see a list of functions you can use.  
