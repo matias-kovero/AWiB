@@ -129,7 +129,7 @@ __4.__ The robot needs to click the first search result (in the "Hakutulokset ta
 
 After you're done the page in your IE browser should look like this:
 
-![](./images/final_result.png)
+![](./images/final_search.png)
 
 ...and your action list in your RPA editor like this:
 
