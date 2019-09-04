@@ -55,22 +55,20 @@ This is the task bot that we will be implementing the actions needed to gather t
 ### Editing the robot
 Open the _YTJ implementation_ on edit mode (right-click --> Edit).
 
-On the left you will see a list of functions you can use.  
-We will need ``Open Browser``& ``Object clone``. Feel free to check other functions as well.  
-You can delete a function by right-click -> Delete.  
+On the left you will see a list of configurable commands that you can use. First, We will need ``Open Browser`` (found under Web Recorder) & ``Object clone``. Feel free to explore other commands as well. IBM RPA with Automation Anywhere offers over 600 different, easily configurable command to build your RPA bots.
 
-On the right you will see a few bars, we are intrested on ``Variable Manager``.   
+You can delete a function by right-click -> Delete. //MOVE
+
+On the right you will see a few bars, we are intrested on ``Variable Manager``. Click on it to expand it.
 
 Here we have defined a few variables you will need:  
 
-``business_id`` Here we have the business_id that we got from the chatbot.  
-``street_address`` Here we will save the info we get from ytj.fi    
-``postcode`` Here we will save the info we get from ytj.fi  
-``city`` Here we will save the info we get from ytj.fi  
-``street_address`` Here we will save the info we get from ytj.fi  
-``info_row``This is used for our helper function. You will need to assingn the row where the the ``street_address postcode & city`` are located on the website. (Postiosoite)
+``business_id`` Here we have the business_id (y-tunnus) that our customer originally told to our chatbot.  
+``street_address`` Here we will save the info we get from ytj.fi   
+``postcode`` Here we will save the info we get from ytj.fi
+``city`` Here we will save the info we get from ytj.fi
    
-##### Coding the bot
+#### Implementing the bot
 __1.__ To start off, open Internet Exlorer and navigate to ytj.fi  
 
 __2.__ Next lets add a ``Object cloning`` and select the search box from the ytj.fi website. We will add the business_id value to it.
