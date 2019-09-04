@@ -26,7 +26,7 @@ Open the __TOOLS__ folder from your desktop and double click __AA Enterprice Cli
 
 ![](./images/RPA_Launch.png)
 
-After that login  with ``username``& ``password``
+After that login  with ``username`` (__developer__) & ``password`` (__adminadmin__).
 
 ![](./images/RPA_Login.png)   
 
