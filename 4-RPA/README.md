@@ -105,10 +105,9 @@ __3.__ Next we want our bot to click the search button / icon on the YTJ web pag
 - Click the "Record" button / icon on your editor (between "New" and "Run" on the top section of the editor window).
 - Select __YTJ - Etusivu - Internet Explorer__ as the window you wnat to use for recording and click "Start".
 - You should now see the YTJ web site within your browser and additional small "Recording" window on the top of it with controls to Pause and Stop the recording.
-![](./images/recorder.png)
-<img src="./images/conf_recorder.png" width="30%">
+<img src="./images/recorder.png" width="30%">
 - Move your mouse cursor over the "Search" button / icon and click it as you normally would.
-<img src="./images/conf_searchclick.png" width="50%">
+<img src="./images/searchclick.png" width="50%">
 
 __4.__ Now go and press the search button manually. We need to get to the next page for the next task.
 
