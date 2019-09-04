@@ -112,6 +112,7 @@ __3.__ Next we want our bot to click the search button / icon on the YTJ web pag
 - Notice that a new Object Cloning command has been added under the third comment row.
 ![](./images/after_searchclick.png)
 
+
 __4.__ Now go and press the search button manually. We need to get to the next page for the next task.
 
 __5.__ The robot needs to click the first search result.  
