@@ -32,7 +32,7 @@ We have defined it to be a so called human task where we have created a simple U
 - **System** lane has a few nodes in this setup. These nodes are completely demostrative for this workshop, but we have given a few examles you could do after the user has validated the data. If the data is valid, we could save the updated data to an CRM alternatively we could inform the customer that we couldn't update the information.
 
 #### Editing workflows
-By clicking a node in the workflow, you are able to view and edit its functions.  
+By clicking a node (also called as activity or a step of a workflow) in the workflow, you are able to view and edit its configuration.  
 
 ![](./images/Robot_Info.png)   
 
