@@ -123,14 +123,21 @@ Once the bot finishes, you should see a similar page in your IE browser window:
 
 ![](./images/after_secondrun.png)
 
-__4.__ Now go and press the search button manually. We need to get to the next page for the next task.
+How did the know to use a valid business id (Y-tunnus) to search for Posti? This is because the variables that we had already prepared for you had a value of __15318864-4__ defined as its default value (that is used when its not otherwise set). Leave the browser window open move back to your RPA editor window.
 
-__5.__ The robot needs to click the first search result.  
-![](./images/clickFirstLink.gif)  
+__4.__ The robot needs to click the first search result (in the "Hakutulokset table") in order to see more detaled information about company we were searching for. Go ahead and add this action under the 4th comment row in your action list. I would do this by using the __Smart Recorder__ (as we did in the previous step), but you can choose to use __Object Cloning__ command manually as we did in the 2nd step. Your choice :) Ask your instructor to help out if needed.
 
-__6.__ Now go and press the first seacrh result manually. We need to get to the next page for the next steps.
+After you're done the page in your IE browser should look like this:
 
-__7.__ We Want to get the name of the company
+![](./images/final_result.png)
+
+...and your action list in your RPA editor like this:
+
+![](./images/actionlist2.png)
+
+__5.__ Now go and press the first seacrh result manually. We need to get to the next page for the next steps.
+
+__6.__ We Want to get the name of the company
 ![](./images/selectName.gif)
 
 Please check you have the values like so:  
