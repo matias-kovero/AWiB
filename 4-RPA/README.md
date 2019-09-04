@@ -115,6 +115,13 @@ __3.__ Next we want our bot to click the search button / icon on the YTJ web pag
 
 ![](./images/after_searchclick.png)
 
+__Save__ your work. Then go ahead and __close__ your IE browser window! This is because next we will test and __Run__ our bot again and if there's an old browser window open with the same name, our bot might get confused.
+
+Once you have closed your IE, run your bot by clicking the "Run" button / icon on the editor. Hands off! Remember, when the bot is running, it's actually using the same controls (mouse and keyboard) that you are!
+
+Once the bot finishes, you should see a similar page in your IE browser window:
+
+![](./images/after_secondrun.png)
 
 __4.__ Now go and press the search button manually. We need to get to the next page for the next task.
 
