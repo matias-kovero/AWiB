@@ -11,7 +11,7 @@ What this ``bot`` should do:
 #### Content
 - [Setup](#setup)
 - [Launch RPA](#launch-rpa)
-- [RPA implementation artifacts](#rpa-implementation-aftifacts)
+- [RPA implementation artifacts](#rpa-implementation-artifacts)
 - [Editing the bot](#editing-the-bot) 
 - [Implementing the bot](#implementing-the-bot) 
 - [Help](#help)
@@ -52,7 +52,7 @@ This is what we call a "system bot". When this is started, it automatically conn
 **YTJ implementation** . 
 This is the task bot that we will be implementing the actions needed to gather the date from ytj.fi web site. ``Get info from YTJ`` calls this task bot. In other words, we could have implemented the needed robotic actions directly Get info from YTJ -bot, but this way it is a bit more feasible to work, separating the actual implementation from the generated main bot.
 
-### Editing the robot
+### Editing the bot
 Open the _YTJ implementation.atmx_ to __editor window__ (right-click --> Edit).
 
 On the left you will see a list of configurable commands that you can use. First, We will need ``Open Browser`` (found under Web Recorder) & ``Object Cloning``. Feel free to explore other commands as well. IBM RPA with Automation Anywhere offers over 600 different, easily configurable command to build your RPA bots.
