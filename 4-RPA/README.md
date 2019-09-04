@@ -83,7 +83,11 @@ You can now test and run your bot for the first time! It has only one command - 
 
 Your bot should run and YTJ web page should be opened in Internet Explorer (IE). Bot stops automatically. If you see a pop-up in IE about some security preferences, click "Ask me later" to close the pop-up. Nice! Your first RPA run :) __Make sure to leave the YTJ web site open!!__
 
-__2.__ Next lets add a ``Object cloning`` and select the search box from the ytj.fi website. We will add the business_id value to it.
+__2.__ Next lets add a ``Object cloning`` and select the search box from the ytj.fi website. We will add the business_id variable value to it.
+
+- Back in RPA editor window, drag and drop ``Object Cloning`` command under the second comment line.
+- When the configuration window opens, select "YTJ - Etusivu - Internet Explorer" for the Select Window -configuration.
+- Next click __Capture__ button __and keep your mouse button pressed down!__ 
 
 ![](./images/select_searchBar.gif)
 
