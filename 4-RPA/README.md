@@ -100,7 +100,7 @@ Your action list in the editor should now be similar to this:
 
 ![](./images/actionlist1.png)
 
-__3.__ Next we want our bot to click the search button / icon on the YTJ web page. You could use the ``Object Cloning`` command similarly as we just did, but let's use another option for this. Let's try the __Smart Recorder__! You can use recording to record your different interaction with the UI you're using. This makes creating new bots very easy and quick :)
+__3.__ Next we want our bot to click the search button / icon on the YTJ web page. You could use the ``Object Cloning`` command similarly as we just did, but let's use another option for this. Let's try the __Smart Recorder__! You can use recording to record your different interaction with the UI you're using. This makes creating new bots very easy and quick :) ``Before you start, make sure that you have the third (3.) comment row selected in your editor's action list.``
 
 - Click the "Record" button / icon on your editor (between "New" and "Run" on the top section of the editor window).
 - Select __YTJ - Etusivu - Internet Explorer__ as the window you wnat to use for recording and click "Start".
@@ -108,6 +108,7 @@ __3.__ Next we want our bot to click the search button / icon on the YTJ web pag
 <img src="./images/recorder.png" width="30%">
 - Move your mouse cursor over the "Search" button / icon and click it as you normally would.
 <img src="./images/searchclick.png" width="50%">
+- You should see the web page changing. Click __Stop__ on the small Recording window. This will stop the recording and bring the RPA editor window forward again.
 
 __4.__ Now go and press the search button manually. We need to get to the next page for the next task.
 
