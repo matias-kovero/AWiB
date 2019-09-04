@@ -10,6 +10,12 @@ All contact and validation information collected during the process (company nam
 
 ![](./Images/overall.png)
 
+1. Customer has a discussion with our virtual agent (implemented with Watson Assistant service) to inform us about their new address.
+2. Our virtual agent gathers the needed address information and their business id (y-tunnus) from the customer and then starts a managed workflow (running on IBM Business Automation Workflow environment) to handle this new information.
+3. First, the workflow triggers a RPA bot (implemented with IBM RPA) that opens YTJ-site and makes a search using the business id (y-tunnus) given by the customer. Bot then extracts the official address infomation from YTJ for that specific business id and sends the results back to the workflow.
+4. When our bot has gathered the official address information from YTJ, workflow automatically moves forward to its next step. It brings up a human task that one of our employees need to handle. Workflow shows an UI with both the information customer provided and the information that our bot gathered from YTJ. Now our handler can inspect if these match and can then decide to accept or decline the address information change for the customer.
+5. The rest of the workflow is fully automated and executes based on the decision our handler made. If the change request was accepted, workflow would save new address information to our CRM system and notify the customer, but if not, just notify the customer of the situation.
+
 #### Content
 - [Assistant](#assistant)
 - [Connecting Chatbot to Business Automation Workflow](#connecting-chatbot-to-baw)
