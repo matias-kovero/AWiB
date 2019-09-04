@@ -116,7 +116,7 @@ https://us-south.functions.cloud.ibm.com/api/v1/web/sandra.calvo%40fi.ibm.com_de
 
 **(5)** Now let's create another action. Click on the Actions menu on the top left side of the screen:
 
-![](./images/17-enable-as-web-action.jpg)
+![](./images/go-back-actions.png)
 
 Then repeat the previous process. Create new action called: **RPACall** and paste the following code:
 
