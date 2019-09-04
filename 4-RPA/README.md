@@ -75,7 +75,7 @@ __1.__ To start off, drag and drop ``Open Browser`` command to your Action List,
 
 When the Open Browser configuration window opens, type in ``https://www.ytj.fi`` to "Step 1: URL to Open" and click __Save__.
 
-![](./images/conf_openbrowser.png | width=200)
+![](./images/conf_openbrowser.png = 250x)
 
 __2.__ Next lets add a ``Object cloning`` and select the search box from the ytj.fi website. We will add the business_id value to it.
 
