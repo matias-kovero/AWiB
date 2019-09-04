@@ -15,7 +15,9 @@ All contact and validation information collected during the process (company nam
 - [Summary](#summary)  
 
 #### Prerequisites
-[IBM Cloud](https://cloud.ibm.com) Account
+- [IBM Cloud](https://cloud.ibm.com) Account
+- Access to IBM Cloud image with [IBM RPA](https://www.ibm.com/automation/software/rpa) and [IBM BAW](https://www.ibm.com/products/business-automation-workflow) installed
+
 
 ## Assistant
 In this part we create the **Chatbot** and edit it so that it can communicate with Cloud Functions.
