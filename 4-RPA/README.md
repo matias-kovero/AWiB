@@ -57,19 +57,19 @@ Open the _YTJ implementation_ on edit mode (right-click --> Edit).
 
 On the left you will see a list of configurable commands that you can use. First, We will need ``Open Browser`` (found under Web Recorder) & ``Object clone``. Feel free to explore other commands as well. IBM RPA with Automation Anywhere offers over 600 different, easily configurable command to build your RPA bots.
 
-You can delete a function by right-click -> Delete. //MOVE
+If you double-click a command it will be added to your bots Action List. If you add something by accident, you can delete a command by right-clicking it and selecting "Delete".
 
-On the right you will see a few bars, we are intrested on ``Variable Manager``. Click on it to expand it.
+On the right-hand side you will see a few bars, we are intrested on ``Variable Manager``. Click on it to expand it.
 
 Here we have defined a few variables you will need:  
 
-``business_id`` Here we have the business_id (y-tunnus) that our customer originally told to our chatbot.  
-``street_address`` Here we will save the info we get from ytj.fi   
-``postcode`` Here we will save the info we get from ytj.fi
-``city`` Here we will save the info we get from ytj.fi
+``business_id``, the business_id (y-tunnus) that our customer originally told to our chatbot.  
+``street_address``, here we will save the info we get from ytj.fi   
+``postcode``, here we will save the info we get from ytj.fi
+``city``, here we will save the info we get from ytj.fi
    
 #### Implementing the bot
-__1.__ To start off, open Internet Exlorer and navigate to ytj.fi  
+__1.__ To start off, drag and drop ``Open Browser`` command to your Action List, just below the comment line saying: "1. Open browser to https://www.ytj.fi".
 
 __2.__ Next lets add a ``Object cloning`` and select the search box from the ytj.fi website. We will add the business_id value to it.
 
