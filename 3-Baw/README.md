@@ -32,16 +32,16 @@ We have defined it to be a so called human task where we have created a simple U
 - **System** lane has a few nodes in this setup. These nodes are completely demostrative for this workshop, but we have given a few examles you could do after the user has validated the data. If the data is valid, we could save the updated data to an CRM alternatively we could inform the customer that we couldn't update the information.
 
 #### Editing workflows
-By clicking a node (also called as activity or a step of a workflow) in the workflow, you are able to view and edit its configuration.  
+By clicking a node - also called as an ``activity`` or a ``step`` of a workflow) in the workflow, you are able to view and edit its configuration.
 
 ![](./images/Robot_Info.png)   
 
-Settings we need to edit on the ``Robot task``:  
-- **General** Give name and color. 
-- **Implementation** Here you choose the type of the node, and if it is an ``Robot task``you will need to press **Generate bot...** to create an framework where you can later on implement the actions of the bot.  
+Settings we would normally need to set on the ``Robot task`` **NOTE!**: everything in the workflow and within its activities is already configured, so don't change anything.
+- **General** Give name and if you want, also color for the activity. 
+- **Implementation** Here you choose the type of the node, and if it is an ``Robot task``you would need to press **Generate bot...** to create a bot definition file that you can later on use to implement the actual RPA bot.  
 - **Data Mapping** If the robot uses additional information we need to provide them to it. Here we map the data to parameters so that the bot is able to use it.
 
-When you open an ``form node`` and you will have a new workflow where you define what the form does when you interact with it.
+When you open an ``UI node / Human task activity`` (Validate data), the so called ``coach designer`` opens. Here you can implement your human taks in form of UIs (pages with whatever content) and logical screen flow between them.
 1. Open the ``form node``
 2. From the ``Implementation``tab open the implementation file
 3. Open the ``Diagram``tab and from the top-right corner press the run icon.
