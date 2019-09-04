@@ -135,7 +135,9 @@ After you're done the page in your IE browser should look like this:
 
 ![](./images/actionlist2.png)
 
-__5.__ Now we obviously want our bot to extract the needed company address information from the search result page. This is easily done using the different commands that RPA platform offers, but since the number of rows in the result HTLM table may vary based on the business id (Y-tunnus) that we are using to concuct the search, we need to make out data extraction dynamic and takes a bit more time. That's why we have already implemented the extraction bot for you that you can use to do data extraction for you. It's located under the AWiB folder in the __Helpers__ folder and called "Extract Data from YTJ HTML Table.atmx".
+__5.__ Now we obviously want our bot to extract the needed company address information from the search result page. This is easily done using the different commands that RPA platform offers, but since the number of rows in the result HTLM table may vary based on the business id (Y-tunnus) that we are using to conduct the search, we need to make our data extraction dynamic and that takes a bit more time.
+
+That's why we have already implemented a "data extraction bot" that you can use to do data extraction for you. It's located under the AWiB folder in the __Helpers__ folder and is called "__Extract Data from YTJ HTML Table.atmx__".
 
 - Add __Run Task__ command to your RPA editors action list, under the 5th comment row.
 
@@ -146,16 +148,19 @@ __5.__ Now we obviously want our bot to extract the needed company address infor
 
 <img src="./images/conf_runtask.png" width="50%">
 
+- Finally click __Save__ on the Run Task configuration windows to save the Run Task command to our bots action list.
 
+__Now__ we can yet again test our bot! Save the latest action list by clicking the __Save__ button / icon on the top of the editor window. __Also__ close your IE browser before running your bot! Let's run it!
 
-__6.__ We Want to get the name of the company
-![](./images/selectName.gif)
+When you run your bot, you should see it 1) opening the YTJ web page, 2) making the search using our business_id variable (deaults to 1531864-4), 3) clicking the first search result to show more detailed information of the company and finally 4) extracting the address information using the helper bot. The helper bot is configured to pop-up a message box displaying the extracted address information. The message box will close automatically in 5 seconds and after it, also the bot finishes.
 
-Please check you have the values like so:  
+__6.__ To finalize our bot, we only need to close the IE browser window (it's always good to clean up all the used windows)
 
-  
-![](./images/nameValues.png)   
+- Add __Close Browser__ command (found under Web Recorder) below to the 6th comment line
 
+Your action list for your bot should now look like this:
+
+![](./images/actionlist_final.png)
 
 __8.__ We need to select the position of postiosoite  
 ![](./images/selectPostiosoite.gif)  
