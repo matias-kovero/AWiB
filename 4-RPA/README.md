@@ -50,7 +50,7 @@ This is our main RPA task bot that will be run, when our workflow will be starte
 This is what we call a "system bot". When this is started, it automatically connects to workflow environments to check if there are some RPA tasks waiting to be done and if so, it will run ``Get info from YTJ`` task bot. The system bot is provided by the RPA platform, so you do not to build it yourself. Once it's started, it is configured to poll our workflow environment from time to time and when it finds something to do, it will run the main task bot (Get info from YTJ in our scenario).
 
 **YTJ implementation** . 
-This is the task bot that we will be implementing the actions needed to gather the date from ytj.fi web site. ``Get info from YTJ`` calls this task bot. In other words, we could have implemented the needed robotic actions directly Get info from YTJ -bot, but this way it is a bit for feasible to work, separating the actual implementation from the generated main bot.
+This is the task bot that we will be implementing the actions needed to gather the date from ytj.fi web site. ``Get info from YTJ`` calls this task bot. In other words, we could have implemented the needed robotic actions directly Get info from YTJ -bot, but this way it is a bit more feasible to work, separating the actual implementation from the generated main bot.
 
 #### Editing the robot
 Open the _YTJ implementation_ on edit mode (right-click --> Edit).
