@@ -92,7 +92,7 @@ __2.__ Next lets add a ``Object cloning`` and select the search box from the ytj
 - When the configuration window opens, select __Set Text__ to "Select action to perform".
 - Click "Text to set" input field to move your cursor/focus to it.
 - Press __Function + F2__ [Fn+F2] to bring up "Insert variable" window, select __business_id__ and click "Insert".
-- Finally click "Save" on the Object Cloning window. 
+- Click "Save" on the Object Cloning window and finally also in the editor window to save your bot.
 
 ![](./images/select_searchBar.gif)
 
@@ -100,7 +100,15 @@ Your action list in the editor should now be similar to this:
 
 ![](./images/actionlist1.png)
 
-__3.__ We will want to next press the search button.  
+__3.__ Next we want our bot to click the search button / icon on the YTJ web page. You could use the ``Object Cloning`` command similarly as we just did, but let's use another option for this. Let's try the __Smart Recorder__! You can use recording to record your different interaction with the UI you're using. This makes creating new bots very easy and quick :)
+
+- Click the "Record" button / icon on your editor (between "New" and "Run" on the top section of the editor window).
+- Select __YTJ - Etusivu - Internet Explorer__ as the window you wnat to use for recording and click "Start".
+- You should now see the YTJ web site within your browser and additional small "Recording" window on the top of it with controls to Pause and Stop the recording.
+![](./images/recorder.png)
+- Move your mouse cursor over the "Search" button / icon and click it as you normally would.
+![](./images/searchclick.png)
+
 ![](./images/pressSearch.gif)  
 
 __4.__ Now go and press the search button manually. We need to get to the next page for the next task.
