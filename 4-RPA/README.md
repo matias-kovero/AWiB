@@ -44,17 +44,16 @@ We have already created a skeleton implementation for you to get started. Move t
 
 Files in this directory:  
 **Get info from YTJ**   
-This is the main function. When we get an task from BAW, this file will run.  
+This is our main RPA task bot that will be run, when our workflow will be started and when RPA task (Get info from YTJ) is triggered. Notice, that this task bot is named exactly like our RPA task in our workflow. This task bot was generated using the bot definition file downloaded from the workflow.
 
 **Loop over IBM Business Automation Workflow tasks**  
-This function loops RPA tasks and if it finds tasks to the RPA, it will call ``Get info from YTJ``  
+This is what we call a "system bot". When this is started, it automatically connects to workflow environments to check if there are some RPA tasks waiting to be done and if so, it will run ``Get info from YTJ`` task bot. The system bot is provided by the RPA platform, so you do not to build it yourself. Once it's started, it is configured to poll our workflow environment from time to time and when it finds something to do, it will run the main task bot (Get info from YTJ in our scenario).
 
 **YTJ implementation** . 
-This is the file that has the robots actions. It will tell the robot what to do. ``Get info from YTJ`` calls this file.  
-
+This is the task bot that we will be implementing the actions needed to gather the date from ytj.fi web site. ``Get info from YTJ`` calls this task bot. In other words, we could have implemented the needed robotic actions directly Get info from YTJ -bot, but this way it is a bit for feasible to work, separating the actual implementation from the generated main bot.
 
 #### Editing the robot
-Open the _YTJ implementation_ on edit mode.  
+Open the _YTJ implementation_ on edit mode (right-click --> Edit).
 
 On the left you will see a list of functions you can use.  
 We will need ``Open Browser``& ``Object clone``. Feel free to check other functions as well.  
