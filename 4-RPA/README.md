@@ -106,10 +106,13 @@ __3.__ Next we want our bot to click the search button / icon on the YTJ web pag
 - Select __YTJ - Etusivu - Internet Explorer__ as the window you wnat to use for recording and click "Start".
 - You should now see the YTJ web site within your browser and additional small "Recording" window on the top of it with controls to Pause and Stop the recording.
 <img src="./images/recorder.png" width="30%">
+
 - Move your mouse cursor over the "Search" button / icon and click it as you normally would.
 <img src="./images/searchclick.png" width="50%">
+
 - You should see the web page changing. Click __Stop__ on the small Recording window. This will stop the recording and bring the RPA editor window forward again.
 - Notice that a new Object Cloning command has been added under the third comment row.
+
 ![](./images/after_searchclick.png)
 
 
