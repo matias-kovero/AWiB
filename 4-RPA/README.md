@@ -88,7 +88,10 @@ __2.__ Next lets add a ``Object cloning`` and select the search box from the ytj
 - Back in RPA editor window, drag and drop ``Object Cloning`` command under the second comment line.
 - When the configuration window opens, select "YTJ - Etusivu - Internet Explorer" for the Select Window -configuration.
 - Next click __Capture__ button __and keep your mouse button pressed down!__
-- While keeping your mouse button down, you should now see the YTJ web page in IE. Move your mouse cursor over the input field (Hae yrityksen nimellä tai Y-tunnuksella) and when you see a red rectangle pulsing around its borders, let go of your mouse button.
+- While keeping your mouse button down, you should now see the YTJ web page in IE. __Move your mouse cursor over the search input field__ (Hae yrityksen nimellä tai Y-tunnuksella) and when you see a red rectangle pulsing around its borders, let go of your mouse button. This will capture the text input field as an object that we can next define some actions against.
+- When the configuration window opens, select __Set Text__ to "Select action to perform".
+- Click "Text to set" input field to move your cursor/focus to it.
+- Press __Function + F2__ [Fn+F2] 
 
 ![](./images/select_searchBar.gif)
 
