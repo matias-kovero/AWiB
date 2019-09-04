@@ -96,6 +96,10 @@ __2.__ Next lets add a ``Object cloning`` and select the search box from the ytj
 
 ![](./images/select_searchBar.gif)
 
+Your action list in the editor should now be similar to this:
+
+![](./images/actionlist1.png)
+
 __3.__ We will want to next press the search button.  
 ![](./images/pressSearch.gif)  
 
