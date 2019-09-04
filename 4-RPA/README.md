@@ -33,7 +33,7 @@ After that login  with ``username`` (__developer__) & ``password`` (__adminadmin
 It might prompt you with a pop-up - if so, select __Skip__ from the bottom-right. 
 
 
-#### RPA implementation artifacts
+### RPA implementation artifacts
 We have already created a skeleton implementation for you to get started. Move to __AWiB__ folder by clicking the folder from the Task navigation area on the left-hand side under My Tasks. The contents of the AWiB folder will be shown within the editor.
 
 **!!** **If you double-click a file it will run it.**  **!!** So, DO NOT run these unless told in these instructions.
