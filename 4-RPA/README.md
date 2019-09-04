@@ -135,7 +135,11 @@ After you're done the page in your IE browser should look like this:
 
 ![](./images/actionlist2.png)
 
-__5.__ Now go and press the first seacrh result manually. We need to get to the next page for the next steps.
+__5.__ Now we obviously want our bot to extract the needed company address information from the search result page. This is easily done using the different commands that RPA platform offers, but since the number of rows in the result HTLM table may vary based on the business id (Y-tunnus) that we are using to concuct the search, we need to make out data extraction dynamic and takes a bit more time. That's why we have already implemented the extraction bot for you that you can use to do data extraction for you. It's located under the AWiB folder in the __Helpers__ folder and called "Extract Data from YTJ HTML Table.atmx".
+
+- Add __Run Task__ command to your RPA editors action list, under the 5th comment row.
+
+![](./images/add_runtask.png)
 
 __6.__ We Want to get the name of the company
 ![](./images/selectName.gif)
