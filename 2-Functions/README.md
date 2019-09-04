@@ -222,7 +222,7 @@ Under the 'set context' there is a variable called `$private` with the value bel
 
 Replace `<your-ibm-cloud-functions-api-key>` with the key you copied earlier in step **(1)**.
 
-![](./images/19-add-credentials.jpg)
+![](./images/add-credentials.jpg)
 
 Now regardless of integration type our chatbot will always start correctly, and it will define the credentials required to call any of our _**IBM Cloud Functions**_.
 
