@@ -8,16 +8,18 @@ Here we will explore Business Automation Workflow (BAW) and view a few of its co
 - [Editing workflows](#editing-workflows)  
 
 #### Access BAW
-Open chrome and navigate to **BAW** Login (Bookmark folder BAW -> Workflow Center - Solutions)  
-Fill in the ``username`` & ``password`` 
+Use the instructions given by your instructors to access your virtual environment and open it in your browser.
+
+Within the virtual desktop, open Chrome and navigate to **BAW** Login (Bookmark folder BAW -> Workflow Center - Solutions)  
+Fill in the ``username`` (admin) & ``password`` (admin) 
 ![](./images/BAW_Login.png)
+
 #### Finding the workflow  
 
-**Select** AWiB Workflow
-After we have logged in, we want to select ``Process Apps``  
-Select the Process created for this workshop -> ``AWiB-workflow``  
-Select from the overview(topmost tab) -> ``Handle data change`` this will open the workflow of our process.
+After we have logged into Workflow Center, we want to select ``Process Apps``. From Process Apps, select and open the Process Application created for this workshop -> ``AWiB-workflow`` (click the blue "AW circle" within its tile). When the Process Application opens in web process designer, click ``AWiB-workflow`` from the left-hand side navigation bar and then from the opened menu ``Handle data change`` under ``Process``. This will open our workflow - the one that our Watson Assistant triggers - in designer.
+
 ![](./images/BAW_Workflow.gif)
+
 #### Quick guide on workflows
 This workflow has 3 lanes, **RPA**, **Handler** and **System** (these lanes are user defined so you can name them whatever you like)  
 ![](./images/BAW_Design.png)  
