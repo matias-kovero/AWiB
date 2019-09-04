@@ -71,7 +71,7 @@ Here we have defined a few variables you will need:
 #### Implementing the bot
 __1.__ To start off, drag and drop ``Open Browser`` command to your Action List, just below the comment line 1. Drop the command __on the__ 1st command line and it will be added below it. You can also click once to select the 1st comment line and when it is selected, __double-click__ the "Open Browser" command from the command list and it will be added under the selected comment line.
 
-![](./images/command1)
+![](./images/command1.png)
 
 __2.__ Next lets add a ``Object cloning`` and select the search box from the ytj.fi website. We will add the business_id value to it.
 
