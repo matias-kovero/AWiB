@@ -79,7 +79,7 @@ When the Open Browser configuration window opens, type in ``https://www.ytj.fi``
 
 You can now test and run your bot for the first time! It has only one command - to open YTJ web page in web browser -, but let's run it because we need the YTJ web page opened when we move forward. First, click __Save__ on the editor window and then __Run__ to test your bot.
 
-![](./images/start_stop.jpg)
+![](./images/start_stop.JPG)
 
 __2.__ Next lets add a ``Object cloning`` and select the search box from the ytj.fi website. We will add the business_id value to it.
 
