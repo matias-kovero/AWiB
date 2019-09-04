@@ -38,7 +38,7 @@ We have already created a skeleton implementation for you to get started. Move t
 
 **!!** **If you double-click a file it will run it.**  **!!** So, DO NOT run these unless told in these instructions.
 
-``You can edit the file by clicking it once and select edit from the top or right-click and select edit.
+``You can edit the file by clicking it once and select edit from the top or right-click and select edit.``
 
 ![](./images/rpa_artifacts.png)
 
