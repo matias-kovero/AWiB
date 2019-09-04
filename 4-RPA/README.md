@@ -33,8 +33,8 @@ After that login  with ``username`` (__developer__) & ``password`` (__adminadmin
 It might prompt you with a pop-up - if so, select __Skip__ from the bottom-right. 
 
 
-#### Robot Framework location
-We have already created an skeleton framework for you to start.  
+#### RPA implementation artifacts
+We have already created an skeleton implementatio for you to start. Move to __AWiB__ folder by 
 
 **!!** **If you double-click a file it will run it.**  **!!**  
 You can edit the file by clicking it once and select edit from the top or right-click and select edit.  
