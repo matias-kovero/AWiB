@@ -6,7 +6,7 @@ Corporate customers contact details have changed. To avoid any issues on future 
 Supplier utilizes AI to collect changed information from Corporate customer in a chatbot dialog. After all valid information has been collected (company name, address, phone number, etc...) - chatbot initiates a business workflow that orchestrates the actual information change into Suppliers system.  
 
 Workflow utilizes both automated and manual tasks to finalize the contact details change. Robotic Process Automation (RPA) is used to supplement and validate company details given by customer from ytj.fi service.  
-All contact and validation information collected during the process (company name, address, phone number, Business ID, etc...) are provided to workflow handler in modern UI, where handler can do final corrections and initiate into their systems.
+All contact and validation information collected during the process (company name, address, phone number, Business ID, etc...) are provided to workflow handler in modern UI, where handler can check the information provided by the customer matches the one got from ytj.fi and the decide to accept or decline the new address information.
 
 #### Content
 - [Assistant](#assistant)
