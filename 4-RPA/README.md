@@ -16,12 +16,13 @@ What this ``bot`` should do:
 - [Coding the bot](#coding-the-bot) 
 - [Help](#help)
 
-##### Setup
+#### Setup
 **Check** that the RPA is running by opening __Chrome__ web browser and opening ``RPA Control room`` from the bookmarks under RPA-folder. You should see this page (No need to login, just check that the page loads). If not, ask your instructor to help you.
 
 ![](./images/RPA_ControlRoom.png)  
 
-##### Launch RPA
+#### Launch RPA
+Open the __TOOLS__ folder from your desktop and double click __AA Enterprice Client 11.3__ to open our RPA editor.
 
 ![](./images/RPA_Launch.png)
 
