@@ -109,6 +109,8 @@ __3.__ Next we want our bot to click the search button / icon on the YTJ web pag
 - Move your mouse cursor over the "Search" button / icon and click it as you normally would.
 <img src="./images/searchclick.png" width="50%">
 - You should see the web page changing. Click __Stop__ on the small Recording window. This will stop the recording and bring the RPA editor window forward again.
+- Notice that a new Object Cloning command has been added under the third comment row.
+![](./images/after_searchclick.png)
 
 __4.__ Now go and press the search button manually. We need to get to the next page for the next task.
 
