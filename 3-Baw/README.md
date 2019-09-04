@@ -21,18 +21,17 @@ After we have logged into Workflow Center, we want to select ``Process Apps``. F
 ![](./images/BAW_Workflow.gif)
 
 #### Quick guide on workflows
-This workflow has 3 lanes, **RPA**, **Handler** and **System** (these lanes are user defined so you can name them whatever you like)  
+This workflow has 3 lanes, **RPA**, **Handler** and **System** (these lanes are user defined so you can name them whatever you like).
+
 ![](./images/BAW_Design.png)  
+
 In this particular workflow:  
 - **RPA** Is responsible of the robot actions.  
 It takes values from the ``start`` node (values we sended from Watson assistant)  
-and performs our ``Robot task`` that you will create.  
-- **Handler** lane has an ``Validate data`` node.  
-We have defined it to be a form. This form will show the information we got from the ``start`` node and the information from the ``Robot task`` node.  
-The user has to review the information and decide if the information is valid.
-- **System** lane has a few nodes in this setup.  
-These nodes are completely demostrative for this workshop, but we have given a few examles you could do after the user has validated the data.  
-If the data is valid, we could save the updated data to an CRM alternatively we could inform the customer that we couldn't update the information.   
+and performs our ``Robot task`` that you will create in next lab.
+- **Handler** lane has an ``Validate data`` node. 
+We have defined it to be a so called human task where we have created a simple UI. This UI will show the information we got from the ``start`` node and the information from the ``Robot task`` node, so that our handler who performs this task can compare the information. The user has to review the information and decide if the information is valid.
+- **System** lane has a few nodes in this setup. These nodes are completely demostrative for this workshop, but we have given a few examles you could do after the user has validated the data. If the data is valid, we could save the updated data to an CRM alternatively we could inform the customer that we couldn't update the information.
 #### Editing workflows
 By clicking a node in the workflow, you are able to view and edit its functions.  
 ![](./images/Robot_Info.png)   
