@@ -76,7 +76,7 @@ A _**dialog**_ uses the _intents_ and _entities_ that are identified in the user
 ## Test your chatbot
 **(1)** You can test your _dialog_ inside the _**Watson Assistant**_ application. Select the `Try It` button at the top right of the screen to enter the _dialog_ tester:
 
-![](./images/try-it1.jpg)
+![](./images/try-it1.png)
 
 **(2)** Try and test all of your _dialog_ branches. It'll look something like this:
 
@@ -100,7 +100,7 @@ An _**assistant**_ is the user-facing component of _**Watson Assistant**_ that m
 
 ![](./images/add-assistant1.jpg)
 
-**(3)** From here Select `Add Dialog Skill` and select your `Banking Chatbot` skill.
+**(3)** From here Select `Add Dialog Skill` and select your `IT Support` skill.
 
 ![](./images/03-add-dialog-skill.jpg)
 
