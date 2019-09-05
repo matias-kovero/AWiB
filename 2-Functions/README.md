@@ -1,7 +1,7 @@
-# _**Watson Assistant Lab 2**_: Integrating RPA with Watson Assistant
+# _**Watson Assistant Lab 2**_: Integrating Business Automation Workflow (BAW) with Watson Assistant
 In this lab we're going to show how you can extend your chatbot with a IBM Business Automation Workflow environment and Robotic Process Automation using _**IBM Cloud Functions**_.
 
-In practical terms, we'll build another _**Watson Assistant**_ _intent_, that allows the user to submit a new address information. When we pick up this _intent_, we'll ask the user for the new address, feed the input text through the RPA and return a response based on the success of the address change. 
+In practical terms, we'll build another _**Watson Assistant**_ _intent_, that allows the user to submit a new address information. When we pick up this _intent_, we'll ask the user for the new address, feed the input text through the BAW and then RPA (Robotic Process Automation) and return a response based on the success of the address change. 
 
 ## Requirements
 - IBM Cloud account 
@@ -112,7 +112,7 @@ Select `Endpoints` from the sidebar, tick the `Enable as Web Action` box, then `
 
 Copy the Web Action URL and save it in a notepad, you will need it later. It should look like this:
 
-https://us-south.functions.cloud.ibm.com/api/v1/web/sandra.calvo%40fi.ibm.com_dev/default/RPAToken.json
+https://us-south.functions.cloud.ibm.com/api/v1/web/sandra.calvo%40fi.ibm.com_dev/default/Token.json
 
 **(5)** Now let's create another action. Click on the Actions menu on the top left side of the screen:
 
@@ -185,7 +185,7 @@ exports.main = main;
 
 ```
 
-This code will use the authentication token from the previous action and call the RPA process with the data we enter in the Watson Assistant chatbot. 
+This code will use the authentication token from the previous action and call the BAW with the data we enter in the Watson Assistant chatbot. 
 
 **(6)** You only need to make a small change to this code.
 
@@ -199,10 +199,10 @@ Select `Endpoints` from the sidebar, tick the `Enable as Web Action` box, then `
 
 Copy the Web Action URL and save it in a notepad, you will need it later. It should look like this:
 
-https://us-south.functions.cloud.ibm.com/api/v1/web/sandra.calvo%40fi.ibm.com_dev/default/RPACall.json
+https://us-south.functions.cloud.ibm.com/api/v1/web/sandra.calvo%40fi.ibm.com_dev/default/WorksflowCall.json
 
 
-**(7)** We've now successfully created two _**IBM Cloud Function**_ that can accept text as input and talk to the RPA API. The final thing we need to do here is to make this function callable from within _**Watson Assistant**_ (or in fact, any other application).
+**(7)** We've now successfully created two _**IBM Cloud Function**_ that can accept text as input and talk to the BAW API that will later launch the RPA process. The final thing we need to do here is to make this function callable from within _**Watson Assistant**_ (or in fact, any other application).
 
 Now let's go and use our functions in _**Watson Assistant**_.
 
@@ -231,7 +231,7 @@ Now regardless of integration type our chatbot will always start correctly, and 
 
 Find the node called _**Get Token**_ and click on it.
 
-The **only** thing you will need to replace here is `<my-RPAToken-endpoint>`. If you didn't save the endpoint in you can get the name of your _**endpoint**_ by going back to your _**IBM Cloud Function**_ in IBM Cloud, clicking `Endpoints` from the sidebar (if you're not already on that screen), then copying everything in the **Web Action URL** _after_ _**.../web/**_.
+The **only** thing you will need to replace here is `<my-Token-endpoint>`. If you didn't save the endpoint in you can get the name of your _**endpoint**_ by going back to your _**IBM Cloud Function**_ in IBM Cloud, clicking `Endpoints` from the sidebar (if you're not already on that screen), then copying everything in the **Web Action URL** _after_ _**.../web/**_.
 
 It should look something like:
 ```Javascript
