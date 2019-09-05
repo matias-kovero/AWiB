@@ -102,7 +102,7 @@ An _**assistant**_ is the user-facing component of _**Watson Assistant**_ that m
 
 **(3)** From here Select `Add Dialog Skill` and select your `IT Support` skill.
 
-![](./images/03-add-dialog-skill.jpg)
+![](./images/03-add-dialog-skill-2.jpg)
 
 ![](./images/add-existing-skill1.jpg)
 
