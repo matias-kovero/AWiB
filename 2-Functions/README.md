@@ -1,5 +1,5 @@
 # _**Watson Assistant Lab 2**_: Integrating RPA with Watson Assistant
-In this lab we're going to show how you can extend your chatbot by using RPA capabilities using _**IBM Cloud Functions**_.
+In this lab we're going to show how you can extend your chatbot with a IBM Business Automation Workflow environment and Robotic Process Automation using _**IBM Cloud Functions**_.
 
 In practical terms, we'll build another _**Watson Assistant**_ _intent_, that allows the user to submit a new address information. When we pick up this _intent_, we'll ask the user for the new address, feed the input text through the RPA and return a response based on the success of the address change. 
 
@@ -13,7 +13,7 @@ In practical terms, we'll build another _**Watson Assistant**_ _intent_, that al
 
 
 ## Setup _**IBM Cloud Function**_
-**(1)** We need a mechanism by which we can call the RPA service, so we can passing our user's input text to the API. We'll do this by creating an _**IBM Cloud Function**_.
+**(1)** We need a mechanism by which we can call the  workflow (running on IBM Business Automation Workflow environment) service, so we can passing our user's input text to the API. We'll do this by creating an _**IBM Cloud Function**_.
 
 With _**IBM Cloud Functions**_ you can write lightweight code that executes application logic in a scalable way. You can then run this code on-demand via requests from applications like our _**Watson Assistant**_ chatbot, or automatically in response to events.
 
@@ -38,7 +38,7 @@ Next, click `Start Creating`, then `Create Action`.
 
 ![](./images/10-create-action.jpg)
 
-**(3)** Call your new action `RPAToken` then ensure you select a `Runtime` of **Node.js**, and hit `Create`.
+**(3)** Call your new action `Token` then ensure you select a `Runtime` of **Node.js**, and hit `Create`.
 
 ![](./images/create-get-token.jpg)
 
@@ -96,7 +96,7 @@ exports.main = main;
  
 ```
 
-This code will call the RPA API and get the authentication token. 
+This code will call the managed workflow (running on IBM Business Automation Workflow environment) API and get the authentication token. 
 
 **(4)** You only need to make a small change to this code.
 
@@ -118,7 +118,7 @@ https://us-south.functions.cloud.ibm.com/api/v1/web/sandra.calvo%40fi.ibm.com_de
 
 ![](./images/go-back-actions.png)
 
-Then repeat the previous process. Create new action called: **RPACall** and paste the following code:
+Then repeat the previous process. Create new action called: **WorkflowCall** and paste the following code:
 
 ```Javascript
 /**
@@ -235,21 +235,21 @@ The **only** thing you will need to replace here is `<my-RPAToken-endpoint>`. If
 
 It should look something like:
 ```Javascript
-name.lastname_dev/default/RPAToken.json
+name.lastname_dev/default/Token.json
 ```
 
 ![](./images/wa-function-token.jpg)
 
 
-**(4)** Find the node called _**Call RPA**_ and modify your enpoint. It should look like:
+**(4)** Find the node called _**Call RPA**_ and modify your enpoint. Remember this connection calls the managed workflow that will later start the RPA process. It should look like:
 
 ```Javascript
-name.lastname_dev/default/RPACall.json
+name.lastname_dev/default/WorkflowCall.json
 ```
 ![](./images/wa-function-rpacall.jpg)
 
 
-Fantastic! Continue with lab 3 to get started with the Robotic Process Automation part. Once you have the RPA running you will be able to call it from your chatbot. 
+Fantastic! Continue with lab 3 to get started with the Robotic Process Automation part. Once you have the next labs running you will be able to call it from your chatbot. 
 
 
 ## Summary
