@@ -18,7 +18,7 @@ All contact and validation information collected during the process (company nam
 
 #### Content
 - [Assistant](#assistant)
-- [Connecting Chatbot to Business Automation Workflow](#connecting-chatbot-to-baw)
+- [Connecting Chatbot to Business Automation Workflow](#connecting-chatbot-to-ibm-business-automation-workflow-(baw))
 - [Automation](#automation)
 - [Summary](#summary)  
 
@@ -36,9 +36,7 @@ This connects the backends of the chatbot and a workflow running on BAW so that 
   - [LAB 2: Integrating BAW with Watson Assistant](./2-Functions)    
  
 ## Automation
-[Environment](https://bluedemos.com/show/2399)(?)  
-Login to your ``Virtual Machine``, it might take a while for the VM to launch.  
-``Skip updates if it ask you to do so.``  
+Login to your ``Virtual Machine``, using the instructions handed out to you by your instructors.
 - [LAB 3: Business Automation Workflow](./3-Baw)
 - [LAB 4: Robotic Process Automation](./4-RPA)
   
