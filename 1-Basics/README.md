@@ -41,8 +41,8 @@ Scroll down and ensure you are using the `Lite` plan, then hit `Create`.
 **(1)** The first thing we need to do in **_Watson Assistant_** is create a _**Skill**_. A _**skill**_ contains the training data and machine learning logic that enables your chatbot to understand and help users and customers.
 
 
-
-Due to time contrains in this session we will import an existing skill. Download the skill from this link: https://ibm.box.com/v/bank-skill-wa
+Due to time contrains in this session we will import an existing skill. This is basic IT support chatbot conversation, where we will add in the next part the integration to Business Automation Workflow.  
+Download the skill from this link: https://ibm.box.com/v/awib-050919
 
 
 There's an `Import Skill` option available whenever you create a new skill - it will be useful when you are backing up, exchanging skills, etc. Find the downloaded .json file in your computer and choose to import Everything.
@@ -59,11 +59,11 @@ You will be directed to the chatbot content.
 
 An _**intent**_ represents the purpose of a user's input. By recognising the intent expressed by a user, Watson Assistant can choose the correct dialog flow to use to respond to it. To plan the intents for your application, you need to consider what your chatbot users might want to do, and what you want your application to be able to handle.
 
-![](./images/intents.jpg)
+![](./images/intents1.jpg)
 
 An _**entity**_ represents a term or object in the user's input that provides **context** for a particular _intent_. If _intents_ represent _verbs_ (something a user wants to do), _entities_ represent _nouns_ (such as the object of, or the context for, an action).
 
-![](./images/entities.jpg)
+![](./images/entities1.jpg)
 
 _**Watson Assistant**_ can also recommend _**synonyms**_ for your _**entity**_ values. The recommender finds related _synonyms_ based on contextual similarity extracted from a vast body of existing information, and uses natural language processing techniques to identify words similar to the existing _synonyms_ in your _entity_ value.
 
@@ -76,11 +76,11 @@ A _**dialog**_ uses the _intents_ and _entities_ that are identified in the user
 ## Test your chatbot
 **(1)** You can test your _dialog_ inside the _**Watson Assistant**_ application. Select the `Try It` button at the top right of the screen to enter the _dialog_ tester:
 
-![](./images/try-it.jpg)
+![](./images/try-it1.jpg)
 
 **(2)** Try and test all of your _dialog_ branches. It'll look something like this:
 
-![](./images/test-dialog.jpg)
+![](./images/test-dialog1.jpg)
 
 See how _**Watson Assistant**_ is picking out the _intents_ and _entities_ it sees in the user input, and responds accordingly.
 
