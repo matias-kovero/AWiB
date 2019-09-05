@@ -40,8 +40,7 @@ Login to your ``Virtual Machine``, using the instructions handed out to you by y
 - [LAB 3: Business Automation Workflow](./3-Baw)
 - [LAB 4: Robotic Process Automation](./4-RPA)
   
-You may now test to application.  
-**Go** to your chatbot and answer the questions.
-  
 ## Summary
 - [LAB 5: Our system in action](./5-Summary)
+
+If you manage to finish all the labs, ask your instructor to help to run the hole solution together!
