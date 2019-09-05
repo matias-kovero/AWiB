@@ -18,7 +18,7 @@ All contact and validation information collected during the process (company nam
 
 #### Content
 - [Assistant](#assistant)
-- [Connecting Chatbot to Business Automation Workflow](#connecting-chatbot-to-ibm-business-automation-workflow-(baw))
+- [Connecting Chatbot to Business Automation Workflow](#connecting-chatbot-to-ibm-business-automation-workflow)
 - [Automation](#automation)
 - [Summary](#summary)  
 
@@ -31,8 +31,8 @@ All contact and validation information collected during the process (company nam
 In this part we create the **Chatbot** and edit it so that it can communicate with Cloud Functions.
  - [LAB 1: Cognitive Chatbot Basics](./1-Basics)
 
-## Connecting Chatbot to IBM Business Automation Workflow (BAW)
-This connects the backends of the chatbot and a workflow running on BAW so that they can communicate together. With this we are able to send the inputs from the chatbot to our workflow. 
+## Connecting Chatbot to IBM Business Automation Workflow
+This connects the backends of the chatbot and a workflow so that they can communicate together. With this we are able to trigger a new workflow and send the inputs from the chatbot to it. 
   - [LAB 2: Integrating BAW with Watson Assistant](./2-Functions)    
  
 ## Automation
