@@ -256,3 +256,13 @@ Fantastic! Continue with lab 3 to get started with the Robotic Process Automatio
 You've reached the end of this lab! By completing it you've learned how to further enhance your chatbot by calling additional services using _**IBM Cloud Functions**_. 
 
 
+Once you have completed the next two labs you will be able to connect with the BAW using your chatbot. 
+The chatbot will gather the information needed (Company name, company number, address, city, postnumber) and send them to the BAW to be checked. 
+
+This is what the conversation will look like:
+
+![](./images/1.png)
+
+![](./images/2.png)
+
+![](./images/3.png)
