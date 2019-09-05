@@ -88,6 +88,8 @@ You will be able to test the integration with the Business Automation Workflow o
 
 ## Build a web based chat interface - OPTIONAL
 
+**We recomend you leave this part for the end and move on to lab 2 in order to finish the labs for the workshop.**
+
 Build a web-hosted chat widget that will allow you to test the _**Watson Assistant**_ _skill_ you've just created in a web environment.
 
 An _**assistant**_ is the user-facing component of _**Watson Assistant**_ that manages the flow of information between your _skills_ and your users. _Assistants_ also allow you to create _**integrations**_ that publish your chatbot to the channels your customers will typically go to for help, e.g. _Slack_, _Facebook Messenger_, _Wordpress_.
