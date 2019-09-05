@@ -43,4 +43,4 @@ Login to your ``Virtual Machine``, using the instructions handed out to you by y
 ## Summary
 - [LAB 5: Our system in action](./5-Summary)
 
-If you manage to finish all the labs, ask your instructor to help to run the hole solution together!
+If you manage to finish all the labs, ask your instructor to help you to run the hole solution together!
